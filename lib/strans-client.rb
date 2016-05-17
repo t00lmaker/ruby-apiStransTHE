@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-class BasicClinet
+class StransClient
 
   VERB_MAP = {
     :get    => Net::HTTP::Get,
