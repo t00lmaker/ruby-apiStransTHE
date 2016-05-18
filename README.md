@@ -1,9 +1,5 @@
 # Ruby Strans Client
 
-[![Stories in Ready](http://badge.waffle.io/jeremytregunna/ruby-trello.png)](http://waffle.io/jeremytregunna/ruby-trello)
-[![Build Status](https://secure.travis-ci.org/jeremytregunna/ruby-trello.png)](http://travis-ci.org/jeremytregunna/ruby-trello) [![Dependency Status](https://gemnasium.com/jeremytregunna/ruby-trello.png)](https://gemnasium.com/jeremytregunna/ruby-trello.png)
-[![Code Climate](https://codeclimate.com/github/jeremytregunna/ruby-trello/badges/gpa.svg)](https://codeclimate.com/github/jeremytregunna/ruby-trello)
-
 Essa lib é um cliente para a [Api Inthegra](https://inthegra.strans.teresina.pi.gov.br/) da [Strans Teresina](http://strans.teresina.pi.gov.br/).
 
 Suporta Ruby 2.0 ou mais novo.
@@ -39,11 +35,11 @@ cliente.linhas()
 cliente.linhas('ininga')
 
 ```
-Ps. : Provisoriamente o cliente retorna um JSON.
 
 
 ## Próximos passos
 
- - Criação de um modelo ruby.
+ - Transformar em uma gem - OK  
+ - Criação de um modelo ruby - OK
  - Gerencia automatica do token de autenticação.
- - Cache de informações.
+ - Criar um cliente lazy que carrega informações em um cache.
