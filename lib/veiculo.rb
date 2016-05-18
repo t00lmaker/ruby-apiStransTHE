@@ -4,7 +4,7 @@ class Veiculo
     load_atts(fields)
   end
 
-  attr_accessor :codigoVeiculo, :hora, :lat, :long
+  attr_accessor :codigoVeiculo, :hora, :lat, :long, :linha
 
   def load_atts(fields)
     @codigoVeiculo  = fields['CodigoVeiculo'] || fields[:codigoVeiculo]

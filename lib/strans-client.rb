@@ -72,7 +72,11 @@ class StransClient
 
   def veiculos()
     res = create_request( :get, "/veiculos")
-    JSON.parse(res.body) #.map{|v| Veiculo.new(v) }
+    veiculos = JSON.parse(res.body).map do |node|
+      linha = Linha.new(node['Linha'])
+      linha.veiculos
+    end
+    veiculos.reduce(:concat)
   end
 
   def veiculos_linha(num_linha)

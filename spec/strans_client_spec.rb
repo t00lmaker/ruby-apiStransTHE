@@ -35,9 +35,12 @@ describe StransClient do
       veiculos = @client.veiculos()
       expect(veiculos).to be_an_instance_of(Array)
       expect(veiculos.size).to be > 0
-      expect(veiculos[0]).to be_an_instance_of(Veiculo)
-      expect(veiculos[0]).to_not be_nil
-      expect(veiculos[0].codigoVeiculo).to_not be_nil
+      veiculo = veiculos.first
+      expect(veiculo).to be_an_instance_of(Veiculo)
+      expect(veiculo).to_not be_nil
+      expect(veiculo.codigoVeiculo).to_not be_nil
+      expect(veiculo.linha).to_not be_nil
+      expect(veiculo.linha.codigoLinha).to_not be_nil
     end
   end
 
