@@ -34,6 +34,7 @@ cliente.linhas()
 # Retorna todas as linhas que possua a palavra ininga.
 cliente.linhas('ininga')
 
+# ... Todos os demais metodos da API.
 ```
 
 
