@@ -28,6 +28,10 @@ cliente = BasicClinet.new('oseu@email.com', 'suaSenha', 'suaChaveAqui')
 2. Agora você pode realizar as chamadas da API que estão documentadas [aqui](https://inthegra.strans.teresina.pi.gov.br/docs)
 
 ```
+# Autentica na na API, usando as credenciais 
+# do construtor acima. 
+cliente.autentic()
+
 # Retorna todas as linhas de ônibus de Teresina.
 cliente.linhas()
 
@@ -37,6 +41,8 @@ cliente.linhas('ininga')
 # ... Todos os demais metodos da API.
 ```
 
+Atenção: O token de autenticação da API tem validade de 10 minutos, por enquanto você deve gerenciar isso. 
+Na próxima atualização da gem isso pode ser gerenciado pela mesma.   
 
 ## Próximos passos
 
