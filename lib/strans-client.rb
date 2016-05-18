@@ -1,5 +1,6 @@
 require 'net/http'
 require 'json'
+require 'linha'
 
 class StransClient
 
@@ -66,12 +67,12 @@ class StransClient
   def linhas( busca = nil)
     params = busca.nil? ? nil :  {busca: busca}
     res = create_request( :get, "/linhas", params)
-    JSON.parse(res.body)
+    JSON.parse(res.body).map{|l| Linha.new(l) }
   end
 
   def veiculos()
     res = create_request( :get, "/veiculos")
-    JSON.parse(res.body)
+    JSON.parse(res.body).map{|v| Veiculo.new(v) }
   end
 
   def veiculos_linha(num_linha)
@@ -82,7 +83,7 @@ class StransClient
   def paradas (busca = nil)
     params = busca.nil? ? nil :  {busca: busca}
     res = create_request( :get, "/paradas", params)
-    JSON.parse(res.body)
+    JSON.parse(res.body).map{|p| Parada.new(p) }
   end
 
   def paradas_linha(num_linha)
