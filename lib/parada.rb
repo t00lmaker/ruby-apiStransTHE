@@ -4,7 +4,7 @@ class Parada
     load_atts(fields)
   end
 
-  attr_accessor :codigoParada, :denomicao, :endereco, :lat, :long
+  attr_accessor :codigoParada, :denomicao, :endereco, :lat, :long, :linha
 
   def load_atts(fields)
     @codigoParada   = fields['CodigoParada'] || fields[:codigoParada]

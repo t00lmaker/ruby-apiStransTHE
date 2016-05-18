@@ -44,4 +44,20 @@ describe StransClient do
     end
   end
 
+  context '.paradas_linha' do
+    it 'deve retornar instancias de Veiculo' do
+      codigoLinha = '0402'
+      paradas = @client.paradas_linha(codigoLinha)
+      expect(paradas).to be_an_instance_of(Array)
+      expect(paradas.size).to be > 0
+      parada = paradas.first
+      expect(parada).to be_an_instance_of(Parada)
+      expect(parada).to_not be_nil
+      expect(parada.codigoParada).to_not be_nil
+      expect(parada.linha).to_not be_nil
+      expect(parada.linha.codigoLinha).to_not be_nil
+      expect(parada.linha.codigoLinha).to eql(codigoLinha)
+    end
+  end
+
 end

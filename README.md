@@ -12,7 +12,7 @@ Suporta Ruby 2.0 ou mais novo.
 ou no seu GEMFILE utilize:
 
 ```
-gem 'strans-client', '~> 0.0.1'
+gem 'strans-client', '~> 0.0.2'
 ```
 
 ## Utilização

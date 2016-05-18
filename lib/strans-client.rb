@@ -92,7 +92,9 @@ class StransClient
 
   def paradas_linha(num_linha)
     res = create_request( :get, "/paradasLinha", {busca: num_linha})
-    JSON.parse(res.body)
+    result = JSON.parse(res.body)
+    result = result['Linha'].merge!( 'Paradas' => result['Paradas'])
+    Linha.new(result).paradas
   end
 
 end
