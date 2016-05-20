@@ -1,0 +1,289 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.inthegra.strans.teresina.pi.gov.br/v1/linhas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - en
+      Date:
+      - Thu, 19 May 2016 23:27:16 GMT
+      X-Api-Key:
+      - aaaaabbbbbcccccdddddeeeeefffffgg
+      X-Auth-Token:
+      - 8ccda55f-acce-468c-85b1-b4f5c32aec26
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.inthegra.strans.teresina.pi.gov.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 May 2016 02:27:18 GMT
+      X-Page:
+      - '0'
+      X-Page-From:
+      - '1'
+      X-Page-Size:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Page-Total:
+      - '205'
+      Content-Language:
+      - pt
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"CodigoLinha":"0001","Denomicao":"POTY VELHO B. ESPERANCA VIA ACARAPE","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0402","Denomicao":"VILA
+        BANDEIRANTE-PLANALTO ININGA FREI SERAFIM","Origem":"VILA BANDEIRANTE","Retorno":"PCA.
+        BANDEIRA","Circular":true},{"CodigoLinha":"0403","Denomicao":"V BANDEIRANTE-SATELITE
+        VIA SHOPPING","Origem":"VILA BANDEIRANTE","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0404","Denomicao":"VILA
+        BANDEIRANTE DOM SEVERINO","Origem":"VILA BANDEIRANTE","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0405","Denomicao":"PLANALTO
+        URUGUAI VIA AV. JOCKEY CLUB","Origem":"PLAN. URUGUAI","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0406","Denomicao":"VALE
+        DO GAVIAO-SATELITE/ININGA","Origem":"PLAN. URUGUAI","Retorno":"AV MARANHAO","Circular":true},{"CodigoLinha":"0360","Denomicao":"DIAMETRAL
+        MOCAMBINHO-PROMORAR","Origem":"MOCAMBINHO","Retorno":"PROMORAR","Circular":true},{"CodigoLinha":"0605","Denomicao":"PLANALTO-BELA
+        VISTA MIGUEL ROSA","Origem":"PL. BELA VISTA","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0609","Denomicao":"SACY
+        MIGUEL ROSA","Origem":"SACY","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0615","Denomicao":"HD-SACY
+        SHOPPING VIA MIGUEL ROSA","Origem":"SACY","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"0617","Denomicao":"HD-PLA.
+        BELA VISTA SHOPPING VIA M.","Origem":"PL. BELA VISTA","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"0709","Denomicao":"SACY
+        BARAO","Origem":"SACY","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0712","Denomicao":"HD-PORTAL
+        DA ALEGRIA-SANTA CLARA BARAO","Origem":"PORTAL ALEGRIA","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0619","Denomicao":"JARDIM-EUROPA
+        TODOS OS SANTOS MIGUEL ROSA","Origem":"JARDIM EUROPA","Retorno":"PCA. JOAO
+        LUIZ","Circular":true},{"CodigoLinha":"0801","Denomicao":"SANTA FE PEDRO FREITAS","Origem":"CJ.
+        SANTA FE","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0802","Denomicao":"SANTA
+        FE MARANHAO VIA SANTO ANTONIO","Origem":"CJ. SANTA FE","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0401","Denomicao":"UNIVERSIDADE","Origem":"COL.
+        AGRICOLA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0505","Denomicao":"REDONDA-DIRCEU
+        I JOAO XXIII","Origem":"REDONDA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0506","Denomicao":"SAO
+        PAULO RENASCENCA I JOAO XXIII","Origem":"SAO PAULO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0507","Denomicao":"JARDIM
+        EUROPA-BOM PRINCIPIO J. XXIII","Origem":"JARDIM EUROPA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0509","Denomicao":"HD-PARQUE
+        JUREMA-SHOPPING","Origem":"PARQUE JUREMA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0510","Denomicao":"PARQUE
+        JUREMA-DIRCEU II JOAO XXIII","Origem":"PARQUE JUREMA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0515","Denomicao":"HD-SAO
+        PAULO SHOPPING VIA SAO JOAO","Origem":"SAO PAULO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0520","Denomicao":"HD-T.
+        OS SANTOS-FREI DAMIAO-JOAO XXIII","Origem":"TODOS OS SANTOS","Retorno":"PCA.
+        BANDEIRA","Circular":true},{"CodigoLinha":"0611","Denomicao":"ALTO DA RESSUREICAO
+        PONTE WALL FERRAZ","Origem":"A. RESSUREICAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0614","Denomicao":"SANTA
+        FE MIGUEL ROSA VIA SHOPPING","Origem":"CJ. SANTA FE","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"0702","Denomicao":"SAO
+        PAULO-RENASCENCA I E III BARAO","Origem":"SAO PAULO","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0704","Denomicao":"JARDIM
+        EUROPA-TODOS OS SANTOS BARAO","Origem":"JARDIM EUROPA","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0101","Denomicao":"STA.
+        MARIA DA CODIPI PQ. ALVORADA","Origem":"SANTA MARIA","Retorno":"LIZAN. NOGUEIRA","Circular":true},{"CodigoLinha":"0104","Denomicao":"SANTA
+        MARIA SHOPPING VIA PQ. ALVORADA","Origem":"SANTA MARIA","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"0105","Denomicao":"HD-SANTA
+        MARIA-MONTE VERDE PQ ALVORADA","Origem":"SANTA MARIA","Retorno":"LIZAN. NOGUEIRA","Circular":true},{"CodigoLinha":"0106","Denomicao":"HD-SANTA
+        MARIA-VASSOURAS PQ. ALVORADA","Origem":"SANTA MARIA","Retorno":"LIZAN. NOGUEIRA","Circular":true},{"CodigoLinha":"0501","Denomicao":"ANITA
+        FERRAZ VIA CONJUNTO","Origem":"ANITA FERRAZ","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0508","Denomicao":"PQ.
+        ITARARE-B. ESPERANCA SAO JOAO","Origem":"PQ. PROGRESSO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0517","Denomicao":"HD-PARQUE
+        ITARARE SHOPPING VIA SAO","Origem":"RES. FREI DAMIAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0103","Denomicao":"MOCAMBINHO-ALTO
+        ALEGRE MATADOURO","Origem":"MOCAMBINHO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0205","Denomicao":"BUENOS
+        AIRES CENTENARIO","Origem":"BUENOS AIRES","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0206","Denomicao":"BUENOS
+        AIRES AEROPORTO","Origem":"BUENOS AIRES","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0301","Denomicao":"MOCAMBINHO
+        DUQUE DE CAXIAS","Origem":"MOCAMBINHO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0302","Denomicao":"MOCAMBINHO
+        ASSEMBLEIA VIA SHOPPING","Origem":"MOCAMBINHO","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0303","Denomicao":"SANTA
+        SOFIA AV. JOSE S. SILVA","Origem":"SANTA SOFIA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0304","Denomicao":"BUENOS
+        AIRES/ALAMEDA PARNAIBA","Origem":"BUENOS AIRES","Retorno":"LIZAN. NOGUEIRA","Circular":true},{"CodigoLinha":"0607","Denomicao":"PROMORAR
+        MIGUEL ROSA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0618","Denomicao":"HD-PROMORAR
+        SHOPPING VIA MIGUEL ROSA","Origem":"PROMORAR","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"0622","Denomicao":"HD-PROMORAR-SANTA
+        CRUZ MIGUEL ROSA","Origem":"PROMORAR","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0002","Denomicao":"PRIMAVERA
+        AV PINEL","Origem":"PRIMAVERA I","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0004","Denomicao":"I.A.P.C/CRISTO
+        REI","Origem":"CONJ. J. E. FALCAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0327","Denomicao":"RODOVIARIA
+        CIRCULAR 2","Origem":"TERMINAL RODOVIARIO","Retorno":"BAL. COCA-COLA","Circular":true},{"CodigoLinha":"0603","Denomicao":"PARQUE
+        JUREMA-DIRCEU II M. ROSA","Origem":"PARQUE JUREMA","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0604","Denomicao":"L.
+        PARENTE-MORADA NOVA MIGUEL ROSA","Origem":"L. PARENTE","Retorno":"PCA. JOAO
+        LUIZ","Circular":true},{"CodigoLinha":"0610","Denomicao":"TRES ANDARES-C.
+        NOVA MONTE CASTELO","Origem":"TRES ANDARES","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0612","Denomicao":"REDENCAO
+        CASA MATER","Origem":"REDENCAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0701","Denomicao":"REDONDA-DIRCEU
+        I BARAO","Origem":"REDONDA","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0710","Denomicao":"ALTO
+        DA RESSUREICAO/BARAO","Origem":"A. RESSUREICAO","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0723","Denomicao":"RODOVIARIA
+        CIRCULAR I","Origem":"TERMINAL RODOVIARIO","Retorno":"BAL. COCA-COLA","Circular":true},{"CodigoLinha":"0102","Denomicao":"POTY
+        VELHO F. SERAFIM VIA ACARAPE","Origem":"POTY VELHO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0107","Denomicao":"HD-ANITA
+        FERRAZ-NOVA TERESINA P. VE","Origem":"ANITA FERRAZ","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0170","Denomicao":"DIAMETRAL
+        POTY VELHO-PL. BELA VISTA","Origem":"POTY VELHO","Retorno":"PL. BELA VISTA","Circular":true},{"CodigoLinha":"0201","Denomicao":"SANTA
+        MARIA DA CODIPI FREI SERAFIM","Origem":"SANTA MARIA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0202","Denomicao":"HD-SANTA
+        MARIA-MONTE VERDE-FREI SERAFIM","Origem":"SANTA MARIA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0203","Denomicao":"MOCAMBINHO-ALTO
+        ALEGRE FREI SERAFIM","Origem":"MOCAMBINHO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0204","Denomicao":"HD-SANTA
+        MARIA-VASSOURAS FREI SERAFIM","Origem":"SANTA MARIA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0270","Denomicao":"DIAMETRAL
+        MOCAMBINHO-PORTO ALEGRE","Origem":"MOCAMBINHO","Retorno":"PORTO ALEGRE","Circular":true},{"CodigoLinha":"0502","Denomicao":"SOCOPO-CIDADE
+        JARDIM SAO CRISTOVAO","Origem":"SOCOPO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0503","Denomicao":"V
+        BANDEIRANTES-SATELITE S. CRISTOVAO","Origem":"VILA BANDEIRANTE","Retorno":"PCA.
+        BANDEIRA","Circular":true},{"CodigoLinha":"0504","Denomicao":"REDONDA-ALTO
+        DA RESSUREICAO JOAO XXIII","Origem":"A. RESSUREICAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0512","Denomicao":"VILA
+        BANDEIRANTES SAO CRISTOVAO","Origem":"VILA BANDEIRANTE","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0513","Denomicao":"PLANALTO
+        URUGUAI SAO CRISTOVAO","Origem":"PLAN. URUGUAI","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0518","Denomicao":"PEDRA
+        MOLE-VILA DO AVIAO","Origem":"ANITA FERRAZ","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0522","Denomicao":"HD-VALE
+        DO GAVIAO-ARVORES VERDE VIA FAET","Origem":"PLAN. URUGUAI","Retorno":"AV MARANHAO","Circular":true},{"CodigoLinha":"0608","Denomicao":"MARIO
+        COVAS ANGELIM / SHOPPING MIGUEL ROSA","Origem":"ANGELIM","Retorno":"PCA. JOAO
+        LUIZ","Circular":true},{"CodigoLinha":"0620","Denomicao":"CERAMICA CIL MIGUEL
+        ROSA","Origem":"CERAMICA CIL","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0621","Denomicao":"HD-IRMA
+        DULCE-ANGELIM MIGUEL ROSA","Origem":"PORTO ALEGRE","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0706","Denomicao":"HD-IRMA
+        DULCE-BARAO","Origem":"PORTO ALEGRE","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0707","Denomicao":"PROMORAR-PARQUE
+        PIAUI BARAO","Origem":"PROMORAR","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0708","Denomicao":"ANGELIM
+        BARAO","Origem":"ANGELIM","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0711","Denomicao":"VILA
+        SAO FRANCISCO-PROMORAR BARAO","Origem":"CONJ. VAMOS VER","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0713","Denomicao":"CERAMICA
+        CIL BARAO","Origem":"CERAMICA CIL","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0365","Denomicao":"UNIVERSIDADE
+        CIRCULAR 2 VIA SHOPPING","Origem":"UNIVERSIDADE FEDERAL","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0516","Denomicao":"L.
+        PARENTE M. NOVA SHOPPING VIA SAO","Origem":"L. PARENTE","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0563","Denomicao":"UNIVERSIDADE
+        CIRCULAR I VIA SHOPPING","Origem":"UNIVERSIDADE FEDERAL","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0703","Denomicao":"PARQUE
+        JUREMA DIRCEU II BARAO","Origem":"PARQUE JUREMA","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0705","Denomicao":"L.
+        PARENTE-MORADA NOVA BARAO","Origem":"L. PARENTE","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0519","Denomicao":"SAO
+        PAULO-RENASCENCA I PONTE WALL FERRAZ","Origem":"SAO PAULO","Retorno":"PCA.
+        JOAO LUIZ","Circular":true},{"CodigoLinha":"0601","Denomicao":"REDONDA-DIRCEU
+        I MIGUEL ROSA","Origem":"REDONDA","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0602","Denomicao":"SAO
+        PAULO-RENASCENCA I M. ROSA","Origem":"SAO PAULO","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0606","Denomicao":"PORTO
+        ALEGRE-PARQUE PIAUI M. ROSA","Origem":"VILA DA GLORIA","Retorno":"PCA. JOAO
+        LUIZ","Circular":true},{"CodigoLinha":"0613","Denomicao":"VILA SAO FRANCISCO
+        MIGUEL ROSA","Origem":"CONJ. VAMOS VER","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0616","Denomicao":"HD-PORTO
+        ALEGRE SHOPPING VIA MIGUEL ROSA","Origem":"VILA DA GLORIA","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"T0100","Denomicao":"BOA
+        VISTA / PONTE NOVA / CENTRO","Origem":"CONJ. BOA VISTA","Retorno":"PRACA SARAIVA","Circular":true},{"CodigoLinha":"T0110","Denomicao":"BOA
+        VISTA / PONTE NOVA / PARQUE","Origem":"CONJ. BOA VISTA","Retorno":"PRACA SARAIVA","Circular":true},{"CodigoLinha":"T0200","Denomicao":"BOA
+        VISTA / PONTE VELHA","Origem":"CONJ. BOA VISTA","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"T0203","Denomicao":"BOA
+        VISTA / SHOPPING","Origem":"CONJ. BOA VISTA","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"T0300","Denomicao":"BOA
+        VISTA / CEASA","Origem":"CONJ. BOA VISTA","Retorno":"CEASA","Circular":true},{"CodigoLinha":"T0400","Denomicao":"BOA
+        VISTA / PONTE NOVA / CORUJAO","Origem":"CONJ. BOA VISTA","Retorno":"PRACA
+        SARAIVA","Circular":true},{"CodigoLinha":"T0401","Denomicao":"BOA VISTA/AV.3/CENTRO/PQ
+        ALVORADA/MUTIRAO - EXT 01","Origem":"CONJ. BOA VISTA","Retorno":"AV. FREI
+        SERAFIM","Circular":true},{"CodigoLinha":"T0402","Denomicao":"BOA VISTA/PQ/MUTIRAO/PQ
+        ALVORADA/RES.FLORES  EXT02","Origem":"CONJ. BOA VISTA","Retorno":"AV. FREI
+        SERAFIM","Circular":true},{"CodigoLinha":"T0403","Denomicao":"BOA VISTA /
+        PARQUE / PARQUE EXT - 03","Origem":"CONJ. BOA VISTA","Retorno":"AV. FREI SERAFIM","Circular":true},{"CodigoLinha":"T0500","Denomicao":"RUA
+        100 / PONTE VELHA","Origem":"RUA 100","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"T0600","Denomicao":"RUA
+        100 PONTE NOVA EXPRESSO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"T0610","Denomicao":"GUADALAJARA
+        - 01","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"T0650","Denomicao":"RUA
+        100 / PONTE NOVA","Origem":"RUA 100","Retorno":"PRACA SARAIVA","Circular":true},{"CodigoLinha":"T0700","Denomicao":"HOSPITAL
+        / PONTE VELHA / CENTRO","Origem":"B. MULTIRAO","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"T0710","Denomicao":"HOSPITAL
+        / PONTE VELHA / PARQUE","Origem":"B. MULTIRAO","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"T0800","Denomicao":"MUTIRAO
+        / PONTE VELHA / CENTRO","Origem":"B. MULTIRAO","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"T0810","Denomicao":"MUTIRAO
+        / PONTE VELHA / PARQUE","Origem":"B. MULTIRAO","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"T0900","Denomicao":"RUA
+        100 / MUTIRAO / CEASA","Origem":"RUA 100","Retorno":"CEASA","Circular":true},{"CodigoLinha":"T1000","Denomicao":"MUTIRAO
+        / PONTE NOVA / GUADALAJARA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"T1010","Denomicao":"MUTIRAO/GUADALAJARA
+        - MANHA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"T1102","Denomicao":"PARQUE
+        ALVORADA / PONTE VELHA","Origem":"PARQUE ALVORADA","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"T1600","Denomicao":"PARQUE
+        ALVORADA / PONTE NOVA","Origem":"PARQUE ALVORADA","Retorno":"PRACA SARAIVA","Circular":true},{"CodigoLinha":"T0510","Denomicao":"RUA
+        100 / PONTE VELHA","Origem":"RUA 100","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"T1100","Denomicao":"GUADALAJARA
+        - 02","Origem":"PARQUE ALVORADA","Retorno":"PRACA SARAIVA","Circular":true},{"CodigoLinha":"T1101","Denomicao":"PARQUE
+        ALVORADA/PONTE NOVA","Origem":"PARQUE ALVORADA","Retorno":"PRACA SARAIVA","Circular":true},{"CodigoLinha":"9999","Denomicao":"LINHA
+        DE TESTE DA TACOM","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"01","Denomicao":"POTY
+        VELHO / FRANCISCO MARREIROS","Origem":"D. MAFRENSE C/ FLAVIO FURTADO","Retorno":"FINAL
+        DA AV. ITARARE","Circular":true},{"CodigoLinha":"03","Denomicao":"MOCAMBINHO
+        / ALTO DA RESSURREICAO ","Origem":"AV. FREITAS NETO QD.27","Retorno":"DES.
+        FREI DAMIAO","Circular":true},{"CodigoLinha":"04","Denomicao":"PORTO ALEGRE
+        / SHOPPING MIGUEL ROSA","Origem":"PORTO ALEGRE II","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"05","Denomicao":"NOVA
+        TERESINA / MACAUBA","Origem":"NOVA TERESINA","Retorno":"RUA AREA LEAO","Circular":true},{"CodigoLinha":"06","Denomicao":"ANGELIM
+        / VILA BANDEIRANTE UESPI","Origem":"AV. ZEQUINHA FREIRE","Retorno":"CONVENTO
+        DAS CARMELITAS","Circular":true},{"CodigoLinha":"08","Denomicao":"PL. BELA
+        VISTA - L. PARENTE / SHOPPING","Origem":"ALTAMIRA C. IGAÇU","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"09","Denomicao":"SATELITE
+        / PROMORAR","Origem":"PRACA DO SATELITE","Retorno":"AV. PRINCIPAL DO PROMORAR","Circular":true},{"CodigoLinha":"10","Denomicao":"STA.
+        MARIA DO CODIPI / C. ADMINISTRATIVO","Origem":"PQ. WALL FERRAZ","Retorno":"CENTRO
+        ADMINISTRATIVO","Circular":true},{"CodigoLinha":"0108","Denomicao":"SANTA
+        MARIA VASSOURA SHOPPING VIA MAFRENSE","Origem":"TERMINAL SANTA MARIA DA CODIPI","Retorno":"TERESINA
+        SHOPPING","Circular":true},{"CodigoLinha":"0623","Denomicao":"HD-MARIO COVAS-DIGNIDADE
+        M ROSA","Origem":"RES MARIO COVAS","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0714","Denomicao":"HD-MARIO
+        COVAS-DIGNIDADE BARAO","Origem":"RES MARIO COVAS","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0715","Denomicao":"TERESINA
+        SUL-PALITOLANDIA-BARAO","Origem":"VL TIRADENTES","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"0521","Denomicao":"NOVA
+        TERESINA SAO CRISTOVAO","Origem":"NOVA TERESINA","Retorno":"AV MARANHAO","Circular":true},{"CodigoLinha":"0624","Denomicao":"HD-BELA
+        VISTA III-V TIRANDENTES M ROSA","Origem":"VL TIRADENTES","Retorno":"PCA. JOAO
+        LUIZ","Circular":true},{"CodigoLinha":"0626","Denomicao":"HD-SACI-UFPI VIA
+        SHOPPING","Origem":"SACY","Retorno":"UNIVERSIDADE FEDERAL","Circular":true},{"CodigoLinha":"0625","Denomicao":"HD-PORTAL
+        DA ALEGRIA-SANTA CLARA M ROSA","Origem":"PORTAL ALEGRIA","Retorno":"PCA. JOAO
+        LUIZ","Circular":true},{"CodigoLinha":"CV03","Denomicao":"HD-0626 SACI-UFPI
+        VIA SHOPPING","Origem":"SACY","Retorno":"SACY","Circular":true},{"CodigoLinha":"0100","Denomicao":"REDONDA/SHOPPING
+        VIA SÃO JOÃO","Origem":"REDONDA","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0300","Denomicao":"MOCAMBINHO/DUQUE
+        DE CAXIAS VIA VILA OPERARIA","Origem":"MOCAMBINHO","Retorno":"TERMINAL 1","Circular":true},{"CodigoLinha":"0245","Denomicao":"VALE
+        DO GAVIAO / PLANALTO URUGUAI","Origem":"PLAN. URUGUAI","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"0246","Denomicao":"VALE
+        DO GAVIAO / PLANALTO ININGA","Origem":"VILA BANDEIRANTE","Retorno":"SHOPPING","Circular":true},{"CodigoLinha":"0724","Denomicao":"OPCIONAL
+        SACY BARÃO","Origem":"SACY","Retorno":"PCA. RIO BRANCO","Circular":true},{"CodigoLinha":"0901","Denomicao":"IRMA
+        DULCE / ESPLANADA / SHOPPING / M.ROSA","Origem":"TERMINAL 1","Retorno":"TERMINAL
+        2","Circular":true},{"CodigoLinha":"I001","Denomicao":"NAZARIA INTERMUNICIPAL
+        / TERESINA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0400","Denomicao":"LINHA
+        RURAL - CAJAIBA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"002","Denomicao":"TABOCA
+        DO PAU FERRADO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1010","Denomicao":"BAIXAO
+        DO CARLOS","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1020","Denomicao":"NOVA
+        LAGUNA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1030","Denomicao":"SANTA
+        LUZ","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1001","Denomicao":"SOINHO
+        VIA SOSSEGO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1002","Denomicao":"ANAJAS
+        VIA ARVORES VERDE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1003","Denomicao":"BELAVISTA
+        VIA S.MARIA (CIRCULAR)","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1111","Denomicao":"ALEGRIA","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1112","Denomicao":"CANTINHO
+        DO SUL","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"001","Denomicao":"PSH
+        TABOCA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1004","Denomicao":"CACIMBA
+        VELHA VIA SOINHO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1005","Denomicao":"FAZENDA
+        SOARES VIA S. VICENTE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1006","Denomicao":"CACIMBA
+        VELHA VIA ARVORES VERDE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1007","Denomicao":"CAMPESTRE
+        NORTE I E II","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1008","Denomicao":"MARAMBAIA","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1009","Denomicao":"BOA
+        HORA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1011","Denomicao":"SERRA
+        DO GAVIÃO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1201","Denomicao":"BOQUINHA","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1202","Denomicao":"BARREIROS","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1203","Denomicao":"MORRO
+        ALEGRE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"11","Denomicao":"LINHA
+        11","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"9998","Denomicao":"LINHA
+        DE TESTE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0688","Denomicao":"OPCIONAL
+        - VILA SAO FRANCISCO MIGUEL ROSA","Origem":"CONJ. VAMOS VER","Retorno":"PCA.
+        JOAO LUIZ","Circular":true},{"CodigoLinha":"0803","Denomicao":"SANTA FÉ/CORUJÃO","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"TP01","Denomicao":"TRANSPORTE
+        EFICIENTE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1040","Denomicao":"FAZENDA
+        NOVA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"9997","Denomicao":"LINHA
+        DE TESTE 2 DA TACOM","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1050","Denomicao":"CEBOLA","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0504-G","Denomicao":"REDONDA-ALTO
+        DA RESSUREICAO JOAO XXIII","Origem":"A. RESSUREICAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0504-P","Denomicao":"REDONDA-ALTO
+        DA RESSUREICAO JOAO XXIII","Origem":"A. RESSUREICAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0504-E","Denomicao":"REDONDA-ALTO
+        DA RESSUREICAO JOAO XXIII","Origem":"A. RESSUREICAO","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"0627","Denomicao":"TERESINA
+        SUL-PALITOLANDIA-MIGUEL ROSA","Origem":"PALITOLANDIA","Retorno":"PCA. SARAIVA","Circular":true},{"CodigoLinha":"902","Denomicao":"TERESINA
+        SUL-PALITOLANDIA-BR - AV MIGUEL ROSA","Origem":"TERMINAL 1","Retorno":"TERMINAL
+        2","Circular":true},{"CodigoLinha":"716","Denomicao":"TERESINA SUL-PALITOLANDIA-BR
+        - AV. BARAO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0519-E","Denomicao":"SAO
+        PAULO-RENASCENCA I PONTE WALL FERRAZ","Origem":"SAO PAULO","Retorno":"PCA.
+        JOAO LUIZ","Circular":true},{"CodigoLinha":"0519-G","Denomicao":"SAO PAULO-RENASCENCA
+        I PONTE WALL FERRAZ","Origem":"SAO PAULO","Retorno":"PCA. JOAO LUIZ","Circular":true},{"CodigoLinha":"0002-E","Denomicao":"PRIMAVERA
+        AV PINEL","Origem":"PRIMAVERA I","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"004","Denomicao":"BOQUINHA","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"005","Denomicao":"MORRO
+        ALEGRE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"006","Denomicao":"BARREIROS","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1205","Denomicao":"BENEDITINO","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0109","Denomicao":"SANTA
+        MARIA MONTE VERDE/SHOPPING VIA PQ. ALVORADA","Origem":"JACINTA ANDRADE","Retorno":"PRACA
+        DA BANDEIRA","Circular":true},{"CodigoLinha":"1060","Denomicao":"CAJAIBA","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0504-S","Denomicao":"REDONDA-ALTO
+        DA RESSUREICAO JOAO XXIII","Origem":"A. RESSUREICAO","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"1070","Denomicao":"CEBOLA
+        / CANTINHO DO SUL","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1012","Denomicao":"CENTRO
+        DO SITIO VIA SAO DOMINGOS","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1013","Denomicao":"BELA
+        VISTA VIA RECANTO SANTO ANTONIO I","Origem":"TERMINAL 1","Retorno":"TERMINAL
+        2","Circular":true},{"CodigoLinha":"1014","Denomicao":"PI 113/VIA ARVORE VERDE","Origem":"TERMINAL
+        1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0523","Denomicao":"SOCOPO
+        - MORROS / SAO CRISTOVAO","Origem":"SOCOPO","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"0110","Denomicao":"SANTA
+        MARIA MONTE VERDE/SHOPPING","Origem":"SANTA MARIA","Retorno":"PRACA DA BANDEIRA","Circular":true},{"CodigoLinha":"1080","Denomicao":"AVE
+        VERDE VIA CANAA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"0730","Denomicao":"UNIVERSIDADE
+        - CENTRO DUQUE DE CAXIAS","Origem":"COL. AGRICOLA","Retorno":"PCA. BANDEIRA","Circular":true},{"CodigoLinha":"T1700","Denomicao":"CONJUNTO
+        NOVO TEMPO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"1200","Denomicao":"BAIXAO
+        DO CARLOS","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"T0850","Denomicao":"JULIO
+        ALMEIDA VIA PARQUE ALVORADA PONTE NOVA","Origem":"TERMINAL 1","Retorno":"TERMINAL
+        2","Circular":true},{"CodigoLinha":"TRLV001","Denomicao":"T. LIVRAMENTO CENTRO
+        (V. JOAO XXIII FREI SERAFIM)","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"ALLV001","Denomicao":"ALTO
+        DA RESSURREICAO - REDONDA","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"ALLV002","Denomicao":"ALTO
+        DA RESSURREICAO - PQ. ITARARE","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"ALLV003","Denomicao":"SAO
+        PAULO - RENASCENCA I","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"TRIT001","Denomicao":"TERMINAL
+        ITARARE - CENTRO (VIA MIGUEL ROSA)","Origem":"TERMINAL 1","Retorno":"TERMINAL
+        2","Circular":true},{"CodigoLinha":"TRIT002","Denomicao":"TERMINAL ITARARE
+        - CENTRO (VIA BARAO DE GURGUEIA)","Origem":"TERMINAL 1","Retorno":"TERMINAL
+        2","Circular":true},{"CodigoLinha":"TRLV002","Denomicao":"TERMINAL LIVRAMENTO
+        CENTRO (V SHOPPING RAUL LOPES)","Origem":"TERMINAL 1","Retorno":"TERMINAL
+        2","Circular":true},{"CodigoLinha":"TRLV003","Denomicao":"TERMINAL LIVRAMENTO
+        - CENTRO (VIA HIGINO CUNHA)","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"ALLV004","Denomicao":"SAO
+        PAULO - ALTO DA RESSURREICAO","Origem":"TERMINAL 1","Retorno":"TERMINAL 2","Circular":true},{"CodigoLinha":"999999","Denomicao":"LINHA
+        PADRÃO","Origem":null,"Retorno":null,"Circular":true}]'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 02:27:17 GMT
+recorded_with: VCR 3.0.1

@@ -1,0 +1,249 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.inthegra.strans.teresina.pi.gov.br/v1/paradasLinha?busca=0402
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - en
+      Date:
+      - Thu, 19 May 2016 23:27:51 GMT
+      X-Api-Key:
+      - aaaaabbbbbcccccdddddeeeeefffffgg
+      X-Auth-Token:
+      - 8ccda55f-acce-468c-85b1-b4f5c32aec26
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.inthegra.strans.teresina.pi.gov.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 May 2016 02:27:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Language:
+      - pt
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"Linha":{"CodigoLinha":"0402","Denomicao":"VILA BANDEIRANTE-PLANALTO
+        ININGA FREI SERAFIM","Origem":"VILA BANDEIRANTE","Retorno":"PCA. BANDEIRA","Circular":true},"Paradas":[{"CodigoParada":2221,"Denomicao":"T
+        Vila Bandeirante","Endereco":"Rua Doutor Lopes Sobrinho - Verde Lar, Teresina
+        - PI, 64062-140, República Federativa do Brasil","Lat":"-5.037948","Long":"-42.742320"},{"CodigoParada":1031,"Denomicao":"RUA
+        PROF. DINA SOARES 19 ","Endereco":"Avenida Zéquinha Freire, 4302-4332 - Santa
+        Isabel, Teresina - PI, Brasil","Lat":"-5.039268","Long":"-42.746932"},{"CodigoParada":1033,"Denomicao":"AV.
+        ZEQUINHA FREIRE 1 ","Endereco":"Avenida Zéquinha Freire, 4195-4219 - Santa
+        Isabel, Teresina - PI, 64053-400, Brasil","Lat":"-5.040731","Long":"-42.747751"},{"CodigoParada":1035,"Denomicao":"AV.
+        ZEQUINHA FREIRE 3 ","Endereco":"Avenida Zéquinha Freire, 4141-4151 - Santa
+        Isabel, Teresina - PI, 64053-400, Brasil","Lat":"-5.041762","Long":"-42.747796"},{"CodigoParada":1037,"Denomicao":"AV.
+        ZEQUINHA FREIRE 5 ","Endereco":"Avenida Zéquinha Freire, 4045-4057 - Santa
+        Isabel, Teresina - PI, 64053-400, Brasil","Lat":"-5.043496","Long":"-42.747827"},{"CodigoParada":1039,"Denomicao":"AV.
+        ZEQUINHA FREIRE 7 ","Endereco":"Avenida Zéquinha Freire, 3939-3963 - Santa
+        Isabel, Teresina - PI, 64053-400, Brasil","Lat":"-5.045072","Long":"-42.747925"},{"CodigoParada":1041,"Denomicao":"AV.
+        ZEQUINHA FREIRE 9 ","Endereco":"Avenida Zéquinha Freire, 3815-3851 - Santa
+        Isabel, Teresina - PI, 64053-400, Brasil","Lat":"-5.047164","Long":"-42.748111"},{"CodigoParada":1043,"Denomicao":"AV.
+        ZEQUINHA FREIRE 11 ","Endereco":"Avenida Zéquinha Freire, 3609-3651 - Santa
+        Isabel, Teresina - PI, 64053-400, Brasil","Lat":"-5.048639","Long":"-42.748223"},{"CodigoParada":1045,"Denomicao":"AV.
+        ZEQUINHA FREIRE 13 ","Endereco":"Avenida Zéquinha Freire, 3429-3473 - Santa
+        Isabel, Teresina - PI, 64053-400, Brasil","Lat":"-5.050978","Long":"-42.748400"},{"CodigoParada":1199,"Denomicao":"RUA
+        FRANCISCA DE BRITO 1 ","Endereco":"Rua Francisco Brito Souza, 207-341 - Satélite,
+        Teresina - PI, Brasil","Lat":"-5.051234","Long":"-42.749246"},{"CodigoParada":1070,"Denomicao":"AV.
+        TEREZINHA 1 ","Endereco":"Rua Santa Teresinha, 696-762 - Satélite, Teresina
+        - PI, 64059-140, Brasil","Lat":"-5.050568","Long":"-42.752241"},{"CodigoParada":1072,"Denomicao":"AV.
+        TEREZINHA 3 ","Endereco":"Rua Santa Teresinha, 355-493 - Satélite, Teresina
+        - PI, 64059-140, Brasil","Lat":"-5.049687","Long":"-42.754683"},{"CodigoParada":1074,"Denomicao":"AV.
+        TEREZINHA 5 ","Endereco":"Rua Santa Teresinha, 187-353 - Satélite, Teresina
+        - PI, 64059-140, Brasil","Lat":"-5.048724","Long":"-42.756743"},{"CodigoParada":1077,"Denomicao":"RUA
+        NETURNO ","Endereco":"Rua Netuno, 170-238 - Satélite, Teresina - PI, 64059-480,
+        Brasil","Lat":"-5.049879","Long":"-42.758849"},{"CodigoParada":1078,"Denomicao":"RUA
+        ROTARY CLUB 1 ","Endereco":"Avenida Geovane Prado, 771-843 - Satélite, Teresina
+        - PI, Brasil","Lat":"-5.050556","Long":"-42.760111"},{"CodigoParada":1080,"Denomicao":"RUA
+        ROTARY CLUB 3 ","Endereco":"Avenida Geovane Prado, 429-507 - Samapi, Teresina
+        - PI, Brasil","Lat":"-5.052944","Long":"-42.761549"},{"CodigoParada":1082,"Denomicao":"RUA
+        ROTARY CLUB 5 ","Endereco":"Avenida Geovane Prado, 129-309 - Samapi, Teresina
+        - PI, Brasil","Lat":"-5.054871","Long":"-42.762216"},{"CodigoParada":1235,"Denomicao":"RUA
+        TIO BENTES ","Endereco":"Rua Tio Bentes, 620-708 - Samapi, Teresina - PI,
+        64055-520, Brasil","Lat":"-5.057049","Long":"-42.762869"},{"CodigoParada":1234,"Denomicao":"RUA
+        SANTO ANTONIO 6 ","Endereco":"Rua Santo Antônio, 3833-3899 - Piçarreira, Teresina
+        - PI, 64055-510, Brasil","Lat":"-5.056963","Long":"-42.764382"},{"CodigoParada":1232,"Denomicao":"RUA
+        SANTO ANTONIO 4 ","Endereco":"Rua Santo Antônio, 3714-3780 - Piçarreira, Teresina
+        - PI, 64055-510, Brasil","Lat":"-5.056605","Long":"-42.765518"},{"CodigoParada":1229,"Denomicao":"RUA
+        SANTO ANTONIO 1 ","Endereco":"Rua Santo Antônio, 3640 - Piçarreira, Teresina
+        - PI, 64055-510, Brasil","Lat":"-5.055818","Long":"-42.767044"},{"CodigoParada":983,"Denomicao":"AV.
+        PRESIDENTE KENNEDY 24 ","Endereco":"Avenida Presidente Kenedy, 3251-3325 -
+        Piçarreira, Teresina - PI, 64064-043, Brasil","Lat":"-5.056002","Long":"-42.768617"},{"CodigoParada":984,"Denomicao":"AV.
+        PRESIDENTE KENNEDY 25 ","Endereco":"Avenida Presidente Kenedy, 3025 - Piçarreira,
+        Teresina - PI, 64064-043, Brasil","Lat":"-5.058813","Long":"-42.768723"},{"CodigoParada":991,"Denomicao":"RUA
+        ADALBERTO C. LIMA 1 ","Endereco":"Rua Juíz João Almeida, 2443-2529 - Horto,
+        Teresina - PI, 64050-220, Brasil","Lat":"-5.061728","Long":"-42.769491"},{"CodigoParada":993,"Denomicao":"RUA
+        ADALBERTO C. LIMA 3 ","Endereco":"Rua Juíz João Almeida, 2205-2327 - Horto,
+        Teresina - PI, 64050-220, Brasil","Lat":"-5.061230","Long":"-42.771839"},{"CodigoParada":995,"Denomicao":"RUA
+        ADALBERTO C. LIMA 5 ","Endereco":"Rua Juíz João Almeida, 1997-2033 - Horto,
+        Teresina - PI, 64050-220, Brasil","Lat":"-5.060860","Long":"-42.773477"},{"CodigoParada":997,"Denomicao":"RUA
+        ADALBERTO C. LIMA 7 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        1333-1435 - Ininga, Teresina - PI, Brasil","Lat":"-5.060283","Long":"-42.776093"},{"CodigoParada":999,"Denomicao":"RUA
+        ADALBERTO C. LIMA 9 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        1105-1203 - Ininga, Teresina - PI, Brasil","Lat":"-5.059866","Long":"-42.777899"},{"CodigoParada":1001,"Denomicao":"RUA
+        ADALBERTO C. LIMA 11 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        761-869 - Ininga, Teresina - PI, 64049-680, Brasil","Lat":"-5.059249","Long":"-42.780480"},{"CodigoParada":1003,"Denomicao":"RUA
+        ADALBERTO C. LIMA 13 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        521-637 - Ininga, Teresina - PI, 64049-680, Brasil","Lat":"-5.058623","Long":"-42.783230"},{"CodigoParada":886,"Denomicao":"AV.
+        HOMERO C. BRANCO 5 ","Endereco":"Avenida Homero Castelo Branco, 2751-2805
+        - Ininga, Teresina - PI, 64048-400, Brasil","Lat":"-5.060617","Long":"-42.783822"},{"CodigoParada":887,"Denomicao":"AV.
+        HOMERO C. BRANCO 7 ","Endereco":"Avenida Homero Castelo Branco, 2007-2011
+        - Ininga, Teresina - PI, 64048-400, Brasil","Lat":"-5.065815","Long":"-42.784309"},{"CodigoParada":890,"Denomicao":"AV.
+        HOMERO C. BRANCO 10 ","Endereco":"Avenida Homero Castelo Branco, 1101-1899
+        - Ininga, Teresina - PI, 64048-400, Brasil","Lat":"-5.068392","Long":"-42.783592"},{"CodigoParada":952,"Denomicao":"AV.
+        DOM SEVERINO 14 ","Endereco":"Avenida Dom Severino, 1865 - Horto, Teresina
+        - PI, 64052-535, Brasil","Lat":"-5.070027","Long":"-42.783766"},{"CodigoParada":954,"Denomicao":"AV.
+        DOM SEVERINO 16 ","Endereco":"Avenida Dom Severino, 1609-1709 - Horto, Teresina
+        - PI, Brasil","Lat":"-5.070011","Long":"-42.785365"},{"CodigoParada":956,"Denomicao":"AV.
+        DOM SEVERINO 18 ","Endereco":"Avenida Dom Severino, 1253 - Horto, Teresina
+        - PI, Brasil","Lat":"-5.069937","Long":"-42.789938"},{"CodigoParada":958,"Denomicao":"AV.
+        DOM SEVERINO 20 ","Endereco":"Avenida Dom Severino, 995-1083 - Horto, Teresina
+        - PI, 64052-535, Brasil","Lat":"-5.069864","Long":"-42.791824"},{"CodigoParada":188,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 10 0FÁTIMA 10 ","Endereco":"Avenida Nossa Senhora de
+        Fátima, 1001 - Fátima, Teresina - PI, Brasil","Lat":"-5.071486","Long":"-42.792089"},{"CodigoParada":181,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 3 ","Endereco":"Avenida Nossa Senhora de Fátima, 771-815,
+        Teresina - PI, Brasil","Lat":"-5.073320","Long":"-42.791629"},{"CodigoParada":190,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 12 ","Endereco":"Avenida Nossa Senhora de Fátima, 365-423
+        - Jóquei, Teresina - PI, Brasil","Lat":"-5.076692","Long":"-42.790707"},{"CodigoParada":191,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 13 ","Endereco":"Avenida Nossa Senhora de Fátima, 69-169
+        - Jóquei, Teresina - PI, Brasil","Lat":"-5.079470","Long":"-42.789937"},{"CodigoParada":178,"Denomicao":"AV.
+        JOÃO XXIII 20 ","Endereco":"Avenida João XXIII, 245-321 - Jóquei, Teresina
+        - PI, 64049-010, Brasil","Lat":"-5.080303","Long":"-42.790371"},{"CodigoParada":209,"Denomicao":"AV.
+        FREI SERAFIM 9 ","Endereco":"Avenida Frei Serafim, 3155-3245 - Centro, Teresina
+        - PI, 64000-020, Brasil","Lat":"-5.084584","Long":"-42.799430"},{"CodigoParada":210,"Denomicao":"AV.
+        FREI SERAFIM 10 ","Endereco":"Avenida Frei Serafim, 2389-2493 - Centro, Teresina
+        - PI, 64000-020, Brasil","Lat":"-5.087214","Long":"-42.804933"},{"CodigoParada":211,"Denomicao":"AV.
+        FREI SERAFIM 11 ","Endereco":"Avenida Frei Serafim, 1967-2085 - Centro, Teresina
+        - PI, 64000-020, Brasil","Lat":"-5.088464","Long":"-42.807462"},{"CodigoParada":213,"Denomicao":"RUA
+        ARLINDO NOGUEIRA 1 ","Endereco":"Rua Arlíndo Nogueira, 140-268 - Vila Operária,
+        Teresina - PI, 64002-390, Brasil","Lat":"-5.088075","Long":"-42.810147"},{"CodigoParada":217,"Denomicao":"RUA
+        A. DE ABREU 1 ","Endereco":"Rua Areolino de Abreu, 935-953 - Centro, Teresina
+        - PI, 64000-180, Brasil","Lat":"-5.090061","Long":"-42.817585"},{"CodigoParada":46,"Denomicao":"AV.
+        MARANHÃO 7 ","Endereco":"Avenida Maranhão, 3110-3208 - Matinha, Teresina -
+        PI, Brasil","Lat":"-5.093430","Long":"-42.818396"},{"CodigoParada":55,"Denomicao":"AV.
+        JOSÉ DOS SANTOS SILVA 1 ","Endereco":"Avenida José dos Santos e Silva, 802-850
+        - Centro, Teresina - PI, Brasil","Lat":"-5.096774","Long":"-42.815248"},{"CodigoParada":57,"Denomicao":"AV.
+        JOSÉ DOS SANTOS SILVA 3 ","Endereco":"Avenida José dos Santos e Silva, 1002-1100
+        - Centro, Teresina - PI, Brasil","Lat":"-5.096133","Long":"-42.812954"},{"CodigoParada":192,"Denomicao":"RUA
+        24 DE JANEIRO 1 ","Endereco":"Rua Vinte e Quatro de Janeiro, 289-395 - Mafuá,
+        Teresina - PI, 64002-280, Brasil","Lat":"-5.093552","Long":"-42.809979"},{"CodigoParada":193,"Denomicao":"RUA
+        24 DE JANEIRO 2 ","Endereco":"Rua Vinte e Quatro de Janeiro, 160-162 - Mafuá,
+        Teresina - PI, 64002-280, Brasil","Lat":"-5.091638","Long":"-42.810943"},{"CodigoParada":196,"Denomicao":"AV.
+        FREI SERAFIM 3 ","Endereco":"Avenida Frei Serafim, 506 - Centro, Teresina
+        - PI, 64001-020, Brasil","Lat":"-5.088428","Long":"-42.806665"},{"CodigoParada":198,"Denomicao":"AV.
+        FREI SERAFIM 5 ","Endereco":"Avenida Frei Serafim, 2404-2492 - Centro, Teresina
+        - PI, Brasil","Lat":"-5.087360","Long":"-42.804419"},{"CodigoParada":200,"Denomicao":"AV.
+        FREI SERAFIM 7 ","Endereco":"Avenida Frei Serafim, 2822-2928 - Centro, Teresina
+        - PI, 64001-020, Brasil","Lat":"-5.085884","Long":"-42.801330"},{"CodigoParada":201,"Denomicao":"AV.
+        FREI SERAFIM 8 ","Endereco":"Avenida Frei Serafim, 3044-3150 - Centro, Teresina
+        - PI, 64001-020, Brasil","Lat":"-5.085065","Long":"-42.799646"},{"CodigoParada":179,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 1 ","Endereco":"Avenida Nossa Senhora de Fátima - Jóquei,
+        Teresina - PI, 64048-180, República Federativa do Brasil","Lat":"-5.079242","Long":"-42.789908"},{"CodigoParada":180,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 2 ","Endereco":"Avenida Nossa Senhora de Fátima, 426-464
+        - Jóquei, Teresina - PI, Brasil","Lat":"-5.076459","Long":"-42.790633"},{"CodigoParada":189,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 11 ","Endereco":"Avenida Nossa Senhora de Fátima, 770-820,
+        Teresina - PI, Brasil","Lat":"-5.073153","Long":"-42.791591"},{"CodigoParada":182,"Denomicao":"AV.
+        NOSSA SRª. DE FÁTIMA 4 ","Endereco":"Avenida Nossa Senhora de Fátima, 982-1032
+        - Fátima, Teresina - PI, Brasil","Lat":"-5.071438","Long":"-42.792054"},{"CodigoParada":959,"Denomicao":"AV.
+        DOM SEVERINO 21 ","Endereco":"Avenida Dom Severino, 998-1086 - Horto, Teresina
+        - PI, Brasil","Lat":"-5.070017","Long":"-42.791872"},{"CodigoParada":957,"Denomicao":"AV.
+        DOM SEVERINO 19 ","Endereco":"Avenida Dom Severino, 1228-1258 - Horto, Teresina
+        - PI, Brasil","Lat":"-5.070093","Long":"-42.789995"},{"CodigoParada":955,"Denomicao":"AV.
+        DOM SEVERINO 17 ","Endereco":"Avenida Dom Severino, 1552-1600 - Horto, Teresina
+        - PI, Brasil","Lat":"-5.070184","Long":"-42.786051"},{"CodigoParada":953,"Denomicao":"AV.
+        DOM SEVERINO 15 ","Endereco":"Avenida Dom Severino, 1832-1940 - Horto, Teresina
+        - PI, Brasil","Lat":"-5.070218","Long":"-42.783669"},{"CodigoParada":892,"Denomicao":"AV.
+        HOMERO C. BRANCO 12 ","Endereco":"Avenida Homero Castelo Branco, 1534-1560
+        - Ininga, Teresina - PI, 64050-010, Brasil","Lat":"-5.070880","Long":"-42.782796"},{"CodigoParada":889,"Denomicao":"AV.
+        HOMERO C. BRANCO 9 ","Endereco":"Avenida Homero Castelo Branco, 1904-1928
+        - Ininga, Teresina - PI, 64050-010, Brasil","Lat":"-5.067511","Long":"-42.783719"},{"CodigoParada":888,"Denomicao":"AV.
+        HOMERO C. BRANCO 8 ","Endereco":"Avenida Homero Castelo Branco, 2014-2018
+        - Ininga, Teresina - PI, 64050-010, Brasil","Lat":"-5.065201","Long":"-42.784334"},{"CodigoParada":1004,"Denomicao":"RUA
+        ADALBERTO C. LIMA 14 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        522-638 - Ininga, Teresina - PI, 64049-680, Brasil","Lat":"-5.058779","Long":"-42.782877"},{"CodigoParada":1002,"Denomicao":"RUA
+        ADALBERTO C. LIMA 12 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        762-870 - Ininga, Teresina - PI, 64049-680, Brasil","Lat":"-5.059344","Long":"-42.780439"},{"CodigoParada":1000,"Denomicao":"RUA
+        ADALBERTO C. LIMA 10 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        1106-1204 - Ininga, Teresina - PI, Brasil","Lat":"-5.059958","Long":"-42.777925"},{"CodigoParada":998,"Denomicao":"RUA
+        ADALBERTO C. LIMA 8 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        2940 - Ininga, Teresina - PI, Brasil","Lat":"-5.060434","Long":"-42.775846"},{"CodigoParada":996,"Denomicao":"RUA
+        ADALBERTO C. LIMA 6 ","Endereco":"Rua Desembargador Adalberto Correia Lima,
+        1562-1606 - Ininga, Teresina - PI, 64049-680, Brasil","Lat":"-5.060823","Long":"-42.773887"},{"CodigoParada":994,"Denomicao":"RUA
+        ADALBERTO C. LIMA 4 ","Endereco":"Rua Juíz João Almeida, 2206-2328 - Horto,
+        Teresina - PI, 64052-880, Brasil","Lat":"-5.061314","Long":"-42.771856"},{"CodigoParada":992,"Denomicao":"RUA
+        ADALBERTO C. LIMA 2 ","Endereco":"Rua Juíz João Almeida, 2444-2530 - Horto,
+        Teresina - PI, 64052-880, Brasil","Lat":"-5.061823","Long":"-42.769342"},{"CodigoParada":985,"Denomicao":"AV.
+        PRESIDENTE KENNEDY 26 ","Endereco":"Avenida Presidente Kenedy, 2115-2201 -
+        Piçarreira, Teresina - PI, 64064-043, Brasil","Lat":"-5.062240","Long":"-42.769247"},{"CodigoParada":966,"Denomicao":"AV.
+        PRESIDENTE KENNEDY 7 ","Endereco":"Avenida Presidente Kenedy, 2250-2306 -
+        Piçarreira, Teresina - PI, 64055-585, Brasil","Lat":"-5.062122","Long":"-42.768997"},{"CodigoParada":967,"Denomicao":"AV.
+        PRESIDENTE KENNEDY 8 ","Endereco":"Avenida Presidente Kenedy, 2570-2844 -
+        Piçarreira, Teresina - PI, 64055-585, Brasil","Lat":"-5.059136","Long":"-42.768541"},{"CodigoParada":968,"Denomicao":"AV.
+        PRESIDENTE KENNEDY 9 ","Endereco":"Avenida Presidente Kenedy, 2952 - Piçarreira,
+        Teresina - PI, 64055-585, Brasil","Lat":"-5.056139","Long":"-42.768413"},{"CodigoParada":1230,"Denomicao":"RUA
+        SANTO ANTONIO 2 ","Endereco":"Rua Santo Antônio, 3640 - Piçarreira, Teresina
+        - PI, 64055-510, Brasil","Lat":"-5.055906","Long":"-42.766996"},{"CodigoParada":1231,"Denomicao":"RUA
+        SANTO ANTONIO 3 ","Endereco":"Rua Santo Antônio, 3782-3900 - Piçarreira, Teresina
+        - PI, 64055-510, Brasil","Lat":"-5.056683","Long":"-42.765442"},{"CodigoParada":1233,"Denomicao":"RUA
+        SANTO ANTONIO 5 ","Endereco":"Rua Santo Antônio, 3782 - Piçarreira, Teresina
+        - PI, 64055-510, Brasil","Lat":"-5.057047","Long":"-42.764376"},{"CodigoParada":1236,"Denomicao":"RUA
+        OSIMA MENDES ","Endereco":"Rua Osima Mendes, 532-596 - Piçarreira, Teresina
+        - PI, Brasil","Lat":"-5.057845","Long":"-42.763436"},{"CodigoParada":1085,"Denomicao":"RUA
+        ROTARY CLUB 8 ","Endereco":"Rua Capitão Vanderley, 2726 - Piçarreira, Teresina
+        - PI, 64056-635, Brasil","Lat":"-5.057534","Long":"-42.762429"},{"CodigoParada":1083,"Denomicao":"RUA
+        ROTARY CLUB 6 ","Endereco":"Avenida Geovane Prado, 130-310 - Samapi, Teresina
+        - PI, Brasil","Lat":"-5.054977","Long":"-42.762188"},{"CodigoParada":1081,"Denomicao":"RUA
+        ROTARY CLUB 4 ","Endereco":"Avenida Geovane Prado, 430-508 - Samapi, Teresina
+        - PI, Brasil","Lat":"-5.053024","Long":"-42.761490"},{"CodigoParada":1079,"Denomicao":"RUA
+        ROTARY CLUB 2 ","Endereco":"Avenida Geovani Prado - Satélite, Teresina - PI,
+        República Federativa do Brasil","Lat":"-5.050532","Long":"-42.760023"},{"CodigoParada":1076,"Denomicao":"RUA
+        SATURNO ","Endereco":"Rua Saturno, 347-451 - Satélite, Teresina - PI, 64059-130,
+        Brasil","Lat":"-5.049341","Long":"-42.759171"},{"CodigoParada":1075,"Denomicao":"AV.
+        TEREZINHA 6 ","Endereco":"Rua Santa Teresinha, 4384 - Satélite, Teresina -
+        PI, 64059-140, Brasil","Lat":"-5.048838","Long":"-42.756734"},{"CodigoParada":1073,"Denomicao":"AV.
+        TEREZINHA 4 ","Endereco":"Rua Santa Teresinha, 356-494 - Satélite, Teresina
+        - PI, 64059-140, Brasil","Lat":"-5.049613","Long":"-42.754985"},{"CodigoParada":1071,"Denomicao":"AV.
+        TEREZINHA 2 ","Endereco":"Rua Santa Teresinha, 696-762 - Satélite, Teresina
+        - PI, 64059-140, Brasil","Lat":"-5.050599","Long":"-42.752313"},{"CodigoParada":1200,"Denomicao":"RUA
+        FRANCISCA DE BRITO 2 ","Endereco":"Rua Francisco Brito Souza, 208-342 - Satélite,
+        Teresina - PI, Brasil","Lat":"-5.051298","Long":"-42.749249"},{"CodigoParada":1046,"Denomicao":"AV.
+        ZEQUINHA FREIRE 14 ","Endereco":"Avenida Zéquinha Freire, 3428-3472 - Santa
+        Isabel, Teresina - PI, Brasil","Lat":"-5.051038","Long":"-42.748264"},{"CodigoParada":1044,"Denomicao":"AV.
+        ZEQUINHA FREIRE 12 ","Endereco":"Avenida Zéquinha Freire, 3608-3652 - Santa
+        Isabel, Teresina - PI, Brasil","Lat":"-5.048563","Long":"-42.748065"},{"CodigoParada":1042,"Denomicao":"AV.
+        ZEQUINHA FREIRE 10 ","Endereco":"Avenida Zéquinha Freire, 3820-3852 - Santa
+        Isabel, Teresina - PI, Brasil","Lat":"-5.047097","Long":"-42.747966"},{"CodigoParada":1038,"Denomicao":"AV.
+        ZEQUINHA FREIRE 6 ","Endereco":"Avenida Zéquinha Freire, 5082 - Santa Isabel,
+        Teresina - PI, Brasil","Lat":"-5.043410","Long":"-42.747706"},{"CodigoParada":1038,"Denomicao":"AV.
+        ZEQUINHA FREIRE 6 ","Endereco":"Avenida Zéquinha Freire, 5082 - Santa Isabel,
+        Teresina - PI, Brasil","Lat":"-5.043410","Long":"-42.747706"},{"CodigoParada":1036,"Denomicao":"AV.
+        ZEQUINHA FREIRE 4 ","Endereco":"Avenida Zéquinha Freire, 4154-4166 - Santa
+        Isabel, Teresina - PI, Brasil","Lat":"-5.041652","Long":"-42.747672"},{"CodigoParada":1034,"Denomicao":"AV.
+        ZEQUINHA FREIRE 2 ","Endereco":"Avenida Zéquinha Freire, 4196-4220 - Santa
+        Isabel, Teresina - PI, Brasil","Lat":"-5.040722","Long":"-42.747622"},{"CodigoParada":1032,"Denomicao":"RUA
+        PROF. DINA SOARES 20 ","Endereco":"Avenida Zéquinha Freire, 4288-4298 - Santa
+        Isabel, Teresina - PI, Brasil","Lat":"-5.039362","Long":"-42.747014"},{"CodigoParada":2221,"Denomicao":"T
+        Vila Bandeirante","Endereco":"Rua Doutor Lopes Sobrinho - Verde Lar, Teresina
+        - PI, 64062-140, República Federativa do Brasil","Lat":"-5.037948","Long":"-42.742320"}]}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 02:27:52 GMT
+recorded_with: VCR 3.0.1

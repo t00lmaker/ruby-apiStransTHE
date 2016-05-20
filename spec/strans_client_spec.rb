@@ -1,63 +1,109 @@
-
 require 'spec_helper'
 
 describe StransClient do
-
   before(:example) do
-    @client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
-    @client.autentic
+    VCR.use_cassette('auth') do
+      client.autentic
+    end
+  end
+
+  let(:client) do
+    StransClient.new('user@example.com', 'secret', 'aaaaabbbbbcccccdddddeeeeefffffgg')
   end
 
   context '.linhas' do
-    it 'deve retornar instancias de Linha' do
-      linhas = @client.linhas()
-      expect(linhas).to be_an_instance_of(Array)
-      expect(linhas.size).to be > 0
-      expect(linhas[0]).to be_an_instance_of(Linha)
-      expect(linhas[0]).to_not be_nil
-      expect(linhas[0].codigoLinha).to_not be_nil
+    before do
+      VCR.use_cassette('lines') do
+        lines
+      end
+    end
+
+    let(:lines) do
+      client.linhas
+    end
+
+    it 'should return an instance of Array' do
+      expect(lines).to be_an_instance_of(Array)
+    end
+
+    it 'is expected not to be empty' do
+      expect(lines).not_to be_empty
+    end
+
+    it 'is exected elements to be instance of Linha' do
+      expect(lines[0]).to be_an_instance_of(Linha)
     end
   end
 
   context '.paradas' do
-    it 'deve retornar instancias de Linha' do
-      paradas = @client.paradas()
-      expect(paradas).to be_an_instance_of(Array)
-      expect(paradas.size).to be > 0
-      expect(paradas[0]).to be_an_instance_of(Parada)
-      expect(paradas[0]).to_not be_nil
-      expect(paradas[0].codigoParada).to_not be_nil
+    before do
+      VCR.use_cassette('stops') do
+        stops
+      end
+    end
+
+    let(:stops) do
+      client.paradas
+    end
+
+    it 'should return an instance of Array' do
+      expect(stops).to be_an_instance_of(Array)
+    end
+
+    it 'should not return a empty array' do
+      expect(stops).not_to be_empty
+    end
+
+    it 'is exected elements to be instance of Parada' do
+      expect(stops[0]).to be_an_instance_of(Parada)
     end
   end
 
   context '.veiculos' do
-    it 'deve retornar instancias de Veiculo' do
-      veiculos = @client.veiculos()
-      expect(veiculos).to be_an_instance_of(Array)
-      expect(veiculos.size).to be > 0
-      veiculo = veiculos.first
-      expect(veiculo).to be_an_instance_of(Veiculo)
-      expect(veiculo).to_not be_nil
-      expect(veiculo.codigoVeiculo).to_not be_nil
-      expect(veiculo.linha).to_not be_nil
-      expect(veiculo.linha.codigoLinha).to_not be_nil
+    before do
+      VCR.use_cassette('vehicles') do
+        vehicles
+      end
+    end
+
+    let(:vehicles) do
+      client.veiculos
+    end
+
+    it 'should return an instance of Array' do
+      expect(vehicles).to be_an_instance_of(Array)
+    end
+
+    it 'should not return an empty array' do
+      expect(vehicles).not_to be_empty
+    end
+
+    it 'is exected elements to be instance of Veiculo' do
+      expect(vehicles[0]).to be_an_instance_of(Veiculo)
     end
   end
 
   context '.paradas_linha' do
-    it 'deve retornar instancias de Veiculo' do
-      codigoLinha = '0402'
-      paradas = @client.paradas_linha(codigoLinha)
-      expect(paradas).to be_an_instance_of(Array)
-      expect(paradas.size).to be > 0
-      parada = paradas.first
-      expect(parada).to be_an_instance_of(Parada)
-      expect(parada).to_not be_nil
-      expect(parada.codigoParada).to_not be_nil
-      expect(parada.linha).to_not be_nil
-      expect(parada.linha.codigoLinha).to_not be_nil
-      expect(parada.linha.codigoLinha).to eql(codigoLinha)
+    before do
+      VCR.use_cassette('stop-and-line') do
+        stop
+      end
+    end
+
+    let(:stop) do
+      client.paradas_linha('0402')
+    end
+
+    it 'should return an Array' do
+      expect(stop).to be_an_instance_of(Array)
+    end
+
+    it 'should not return an empty array' do
+      expect(stop).not_to be_empty
+    end
+
+    it 'should return elements as instances of Parada' do
+      expect(stop[0]).to be_an_instance_of(Parada)
     end
   end
-
 end

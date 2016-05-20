@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.inthegra.strans.teresina.pi.gov.br/v1/veiculos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - en
+      Date:
+      - Thu, 19 May 2016 23:27:21 GMT
+      X-Api-Key:
+      - aaaaabbbbbcccccdddddeeeeefffffgg
+      X-Auth-Token:
+      - 8ccda55f-acce-468c-85b1-b4f5c32aec26
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.inthegra.strans.teresina.pi.gov.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 May 2016 02:27:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Language:
+      - pt
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"Linha":{"CodigoLinha":"0510","Denomicao":"PARQUE JUREMA-DIRCEU II
+        JOAO XXIII","Origem":"PARQUE JUREMA","Retorno":"PCA. BANDEIRA","Circular":true,"Veiculos":[{"CodigoVeiculo":"03250","Lat":"-5.10974200","Long":"-42.75128000","Hora":"23:19"}]}},{"Linha":{"CodigoLinha":"0603","Denomicao":"PARQUE
+        JUREMA-DIRCEU II M. ROSA","Origem":"PARQUE JUREMA","Retorno":"PCA. JOAO LUIZ","Circular":true,"Veiculos":[{"CodigoVeiculo":"03416","Lat":"-5.12215000","Long":"-42.79368800","Hora":"23:18"}]}},{"Linha":{"CodigoLinha":"0723","Denomicao":"RODOVIARIA
+        CIRCULAR I","Origem":"TERMINAL RODOVIARIO","Retorno":"BAL. COCA-COLA","Circular":true,"Veiculos":[{"CodigoVeiculo":"04371","Lat":"-5.08774000","Long":"-42.77513500","Hora":"23:19"}]}},{"Linha":{"CodigoLinha":"0365","Denomicao":"UNIVERSIDADE
+        CIRCULAR 2 VIA SHOPPING","Origem":"UNIVERSIDADE FEDERAL","Retorno":"PCA. BANDEIRA","Circular":true,"Veiculos":[{"CodigoVeiculo":"03448","Lat":"-5.06567200","Long":"-42.82918700","Hora":"23:18"}]}},{"Linha":{"CodigoLinha":"0563","Denomicao":"UNIVERSIDADE
+        CIRCULAR I VIA SHOPPING","Origem":"UNIVERSIDADE FEDERAL","Retorno":"PCA. BANDEIRA","Circular":true,"Veiculos":[{"CodigoVeiculo":"02132","Lat":"-5.04176200","Long":"-42.81687300","Hora":"23:18"}]}},{"Linha":{"CodigoLinha":"0606","Denomicao":"PORTO
+        ALEGRE-PARQUE PIAUI M. ROSA","Origem":"VILA DA GLORIA","Retorno":"PCA. JOAO
+        LUIZ","Circular":true,"Veiculos":[{"CodigoVeiculo":"04343","Lat":"-5.18306200","Long":"-42.73537300","Hora":"23:18"}]}},{"Linha":{"CodigoLinha":"0613","Denomicao":"VILA
+        SAO FRANCISCO MIGUEL ROSA","Origem":"CONJ. VAMOS VER","Retorno":"PCA. JOAO
+        LUIZ","Circular":true,"Veiculos":[{"CodigoVeiculo":"04325","Lat":"-5.15581500","Long":"-42.75997000","Hora":"23:18"}]}}]'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 02:27:22 GMT
+recorded_with: VCR 3.0.1
