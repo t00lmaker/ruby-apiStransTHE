@@ -5,12 +5,11 @@ describe StransClient do
 
   before(:example) do
     @client = StransClient.new('luanpontes2@gmail.com', 'naul1991', '49ea6f5525a34e71bdd7b4f8a92adaac')
-    @client.autentic
   end
 
   context '.linhas' do
     it 'deve retornar instancias de Linha' do
-      linhas = @client.linhas()
+      linhas = @client.get(:linhas)
       expect(linhas).to be_an_instance_of(Array)
       expect(linhas.size).to be > 0
       expect(linhas[0]).to be_an_instance_of(Linha)
@@ -21,7 +20,7 @@ describe StransClient do
 
   context '.paradas' do
     it 'deve retornar instancias de Linha' do
-      paradas = @client.paradas()
+      paradas = @client.get(:paradas)
       expect(paradas).to be_an_instance_of(Array)
       expect(paradas.size).to be > 0
       expect(paradas[0]).to be_an_instance_of(Parada)
@@ -32,7 +31,7 @@ describe StransClient do
 
   context '.veiculos' do
     it 'deve retornar instancias de Veiculo' do
-      veiculos = @client.veiculos()
+      veiculos = @client.get(:veiculos)
       expect(veiculos).to be_an_instance_of(Array)
       expect(veiculos.size).to be > 0
       veiculo = veiculos.first
@@ -47,7 +46,7 @@ describe StransClient do
   context '.paradas_linha' do
     it 'deve retornar instancias de Veiculo' do
       codigoLinha = '0402'
-      paradas = @client.paradas_linha(codigoLinha)
+      paradas = @client.get(:paradas_linha, codigoLinha)
       expect(paradas).to be_an_instance_of(Array)
       expect(paradas.size).to be > 0
       parada = paradas.first
@@ -57,6 +56,23 @@ describe StransClient do
       expect(parada.linha).to_not be_nil
       expect(parada.linha.codigoLinha).to_not be_nil
       expect(parada.linha.codigoLinha).to eql(codigoLinha)
+    end
+  end
+
+  #pode da error de veiculo nao encontrado
+  context '.veiculos_linha' do
+    it 'deve retornar instancias de Veiculo' do
+      codigoLinha = '0403'
+      veiculos = @client.get(:veiculos_linha,codigoLinha)
+      expect(veiculos).to be_an_instance_of(Array)
+      expect(veiculos.size).to be > 0
+      veiculo = veiculos.first
+      expect(veiculo).to be_an_instance_of(Veiculo)
+      expect(veiculo).to_not be_nil
+      expect(veiculo.codigoVeiculo).to_not be_nil
+      expect(veiculo.linha).to_not be_nil
+      expect(veiculo.linha.codigoLinha).to_not be_nil
+      expect(veiculo.linha.codigoLinha).to eql(codigoLinha)
     end
   end
 
