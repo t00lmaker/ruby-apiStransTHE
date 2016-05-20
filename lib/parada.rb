@@ -12,6 +12,7 @@ class Parada
     @endereco       = fields['Endereco'] || fields[:endereco]
     @lat            = fields['Lat']  || fields[:lat]
     @long           = fields['Long'] || fields[:long]
+    @linha          = fields[:linha]
   end
 
 end

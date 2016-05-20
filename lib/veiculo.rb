@@ -11,6 +11,7 @@ class Veiculo
     @hora           = fields['Hora'] || fields[:hora]
     @lat            = fields['Lat']  || fields[:lat]
     @long           = fields['Long'] || fields[:long]
+    @linha          = fields[:linha]
   end
 
 end
