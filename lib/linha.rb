@@ -1,33 +1,24 @@
-
 class Linha
+  attr_accessor :codigoLinha, :denomicao, :origem, :retorno, :circular,
+    :veiculos, :paradas
 
-  def initialize(fields)
-    load_atts(fields)
-  end
-
-  attr_accessor :codigoLinha, :denomicao, :origem,
-                :retorno, :circular, :veiculos, :paradas
-
-  def load_atts(fields)
+  def initialize(fields = {})
     @codigoLinha  = fields['CodigoLinha'] || fields[:codigoLinha]
     @denomicao    = fields['Denomicao'] || fields[:denomicao]
     @origem       = fields['Origem']  || fields[:origem]
     @retorno      = fields['Retorno'] || fields[:retorno]
     @circular     = fields['Circular'] || fields[:circular]
-    @veiculos = load_objs(fields['Veiculos']||fields[:veiculos], Veiculo)
-    @paradas  = load_objs(fields['Paradas']||fields[:paradas], Parada)
+    @veiculos     = load_objects(fields['Veiculos'] || fields[:veiculos], Veiculo)
+    @paradas      = load_objects(fields['Paradas'] || fields[:paradas], Parada)
   end
 
+  private
 
-  def load_objs(objs, klass)
-    if objs.is_a?(Array)
-      objs = objs.map do |o|
-          o = klass.new(o)
-          o.linha = self
-          o
+  def load_objects(objects, klass)
+    if objects.is_a?(Array)
+      objects.map do |attributes|
+        klass.new(attributes.merge(linha: self))
       end
     end
-    return objs
   end
-
 end

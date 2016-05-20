@@ -1,6 +1,9 @@
 require 'net/http'
 require 'json'
-require 'linha'
+
+require File.join(File.join(File.dirname(__FILE__)), 'linha')
+require File.join(File.join(File.dirname(__FILE__)), 'parada')
+require File.join(File.join(File.dirname(__FILE__)), 'veiculo')
 
 class StransClient
 

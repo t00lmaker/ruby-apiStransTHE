@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.inthegra.strans.teresina.pi.gov.br/v1/signin
+    body:
+      encoding: UTF-8
+      string: '{"email":"user@example.com","password":"secret"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Language:
+      - en
+      Date:
+      - Thu, 19 May 2016 23:27:15 GMT
+      X-Api-Key:
+      - aaaaabbbbbcccccdddddeeeeefffffgg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.inthegra.strans.teresina.pi.gov.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 May 2016 02:27:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Language:
+      - pt
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"token":"8ccda55f-acce-468c-85b1-b4f5c32aec26","minutes":10}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 02:27:16 GMT
+recorded_with: VCR 3.0.1
