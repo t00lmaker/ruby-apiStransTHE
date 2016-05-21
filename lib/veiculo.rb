@@ -8,8 +8,8 @@ class Veiculo
     if(fields)
       @codigoVeiculo  = fields['CodigoVeiculo'] || fields[:codigoVeiculo]
       @hora           = fields['Hora'] || fields[:hora]
-      @lat            = fields['Lat']  || fields[:lat]
-      @long           = fields['Long'] || fields[:long]
+      @lat            = (fields['Lat']  || fields[:lat]).to_f
+      @long           = (fields['Long'] || fields[:long]).to_f
     end
   end
 
