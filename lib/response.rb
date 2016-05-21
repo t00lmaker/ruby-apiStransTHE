@@ -1,4 +1,4 @@
-
+require 'require_models'
 
 class Response
 
@@ -7,11 +7,10 @@ class Response
   end
 
   def model(path)
-    #
     @resp = JSON.parse(@resp.body)
-
-    if(@resp.respond_to?('has_key') && @resp.has_key?('code'))
-      raise @resp['message']
+    if(@resp.kind_of?(Hash) && @resp['code'] )
+        puts @resp
+        return Erro.new(@resp)
     end
 
     case path
@@ -47,7 +46,6 @@ class Response
   end
 
   def veiculos_linha()
-    puts @resp
     linha = Linha.new(@resp['Linha'])
     linha.veiculos
   end
