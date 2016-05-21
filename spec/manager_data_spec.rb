@@ -16,5 +16,14 @@ describe ManagerData do
     end
   end
 
+  context '.linhas_paradas' do
+    it "deve retornar paradas" do
+      linhas = @client.linhas_parada(2460)
+      expect(linhas).to_not be_nil
+      puts linhas.to_json
+    end
+  end
+
+
 
 end

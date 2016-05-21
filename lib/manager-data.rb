@@ -5,6 +5,22 @@ class ManagerData < StransClient
 
   RAIO_TERRA = 6378.137 #KM
 
+  def load_data
+    @linhas = get(:linhas)
+    @linha_paradas = {}
+    @parada_linhas = {}
+    @linhas.each do |l|
+      paradas = get(:paradas_linha, l.codigoLinha)
+      @linha_paradas[l.codigoLinha] = paradas
+      if(!paradas.kind_of?(Erro))
+        paradas.each do |p|
+          @parada_linhas[p.codigoParada] = [] if @parada_linhas[p.codigoParada].nil?
+          @parada_linhas[p.codigoParada] << p.linha
+        end
+      end
+    end
+  end
+
   #pega as paradas com distancia máxima
   # da localização passada.
   def parada_form(long, lat, dist)
@@ -35,13 +51,16 @@ class ManagerData < StransClient
     paradas
   end
 
+  def linhas_parada(codigoParada)
+    load_data() if @linhas.nil?
+    @parada_linhas[codigoParada]
+  end
+
   private
 
   #Calcula da diferenca entre duas lats ou longs.
   def calc_distan(pos1, pos2)
     (pos1 - pos2) * Math::PI / 180
   end
-
-
 
 end
