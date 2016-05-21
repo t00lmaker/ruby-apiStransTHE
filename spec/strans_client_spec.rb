@@ -24,7 +24,6 @@ describe StransClient do
   context '.paradas' do
     it 'deve retornar instancias de Linha' do
       paradas = @client.get(:paradas)
-      puts paradas.to_json
       expect(paradas).to be_an_instance_of(Array)
       expect(paradas.size).to be > 0
       expect(paradas[0]).to be_an_instance_of(Parada)

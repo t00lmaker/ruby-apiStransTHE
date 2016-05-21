@@ -9,7 +9,6 @@ class Response
   def model(path)
     @resp = JSON.parse(@resp.body)
     if(@resp.kind_of?(Hash) && @resp['code'] )
-        puts @resp
         return Erro.new(@resp)
     end
 
