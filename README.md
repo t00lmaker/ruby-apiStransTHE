@@ -1,4 +1,4 @@
-# Ruby Strans Client
+# Ruby Strans Client - 1.0.0
 
 Essa lib é um cliente para a [Api Inthegra](https://inthegra.strans.teresina.pi.gov.br/) da [Strans Teresina](http://strans.teresina.pi.gov.br/).
 
@@ -12,7 +12,7 @@ Suporta Ruby 2.0 ou mais novo.
 ou no seu GEMFILE utilize:
 
 ```
-gem 'strans-client', '~> 0.0.2'
+gem 'strans-client', '1.0.0'
 ```
 
 ## Utilização
@@ -22,31 +22,58 @@ gem 'strans-client', '~> 0.0.2'
 ```
 require 'strans-client'
 
-cliente = BasicClinet.new('oseu@email.com', 'suaSenha', 'suaChaveAqui')
+cliente = StransClient.new('oseu@email.com', 'suaSenha', 'suaChaveAqui')
 ```
 
 2. Agora você pode realizar as chamadas da API que estão documentadas [aqui](https://inthegra.strans.teresina.pi.gov.br/docs)
 
 ```
-# Autentica na na API, usando as credenciais 
-# do construtor acima. 
-cliente.autentic()
+# Autentica na na API, usando as credenciais
+# do construtor acima.
+cliente.get(<path>, <SePrecisarDeParametro>)
+```
+#Possíveis paths:
 
-# Retorna todas as linhas de ônibus de Teresina.
-cliente.linhas()
+```
+:linhas => '/linhas',
+:veiculos => '/veiculos',
+:veiculos_linha => '/veiculosLinha',
+:paradas => '/paradas',
+:paradas_linha => '/paradasLinha',
+```
+#Exemplos:
 
-# Retorna todas as linhas que possua a palavra ininga.
-cliente.linhas('ininga')
+```
+  # Todas as linhas disponiveis.
+  cliente.get(:linhas)
 
-# ... Todos os demais metodos da API.
+  # GET /paradas?busca=ininga
+  # Todas as linhas que possuam o termo “ininga”.
+  cliente.get(:linhas, 'ininga')
+
+  # GET /paradasLinha?busca=0402
+  # Retorna todas as paradas da linha indicada com o código indicado.
+  cliente.get(:paradas_linha, '0402')
+
 ```
 
-Atenção: O token de autenticação da API tem validade de 10 minutos, por enquanto você deve gerenciar isso. 
-Na próxima atualização da gem isso pode ser gerenciado pela mesma.   
+#Modelo
+
+Todas as chamadas retorna objetos populados, em que você pode usar o metodo
+to_json para transforma-los em JSON. Esse modelo possui os mesmo atributos
+do JSON retornado pela api, mas com os nomes dos atributos em minúsculos.
+Veja o modelo no código acima.
+
+#Erros
+
+Alguns erros pode ocorrer por conta de problemas na API ou na requisição
+Todos ele retorna uma instancia da classe Erro, com uma mensagem associada.
 
 ## Próximos passos
 
  - Transformar em uma gem - OK  
  - Criação de um modelo ruby - OK
- - Gerencia automatica do token de autenticação.
+ - Gerenciar  erros retornados pela API. (+/-)
+ - Gerenciar automaticamente o token de autenticação. - OK
+ - Molhar o método to_json dos modelos, está funcional, mas feio.
  - Criar um cliente lazy que carrega informações em um cache.
