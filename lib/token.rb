@@ -1,8 +1,8 @@
+require 'require_models'
 
 class Token
 
   def initialize (key, fields={})
-
       @key = key
       @create_at = Time.now
       @minute_validate = fields[:minutes]
@@ -25,8 +25,14 @@ class Token
   end
 
   def valid?
-    puts  @token
     !@token.nil? && (Time.now - 10 * 60) <= @create_at
   end
 
+  def to_json
+    {
+      'key' => @key,
+      'token' => @token,
+      'minute_validate' => @minute_validate
+    }.to_json
+  end
 end

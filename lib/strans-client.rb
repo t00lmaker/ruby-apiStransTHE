@@ -1,7 +1,7 @@
+
 require 'net/http'
 require 'json'
-require 'linha'
-require 'token'
+require 'require_models'
 
 class StransClient
 
@@ -24,12 +24,10 @@ class StransClient
   def get(path, busca = nil )
     @request = Request.new(@token)
     if(@token.valid?)
-      puts '#2'
       busca = busca.nil? ? {} :  {busca: busca}
       @resp  = @request.send(:get, PATHS[path], busca)
       @resp.model(path)
     else
-      puts '#1'
       autentic()
       get(path, busca)
     end

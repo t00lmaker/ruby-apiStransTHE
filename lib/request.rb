@@ -1,4 +1,5 @@
 require 'json'
+require 'require_models'
 
 class Request
 

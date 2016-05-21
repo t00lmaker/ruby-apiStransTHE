@@ -1,5 +1,8 @@
 
-require 'spec_helper'
+require 'rspec'
+require 'require_models'
+require 'json'
+
 
 describe StransClient do
 
@@ -21,6 +24,7 @@ describe StransClient do
   context '.paradas' do
     it 'deve retornar instancias de Linha' do
       paradas = @client.get(:paradas)
+      puts paradas.to_json
       expect(paradas).to be_an_instance_of(Array)
       expect(paradas.size).to be > 0
       expect(paradas[0]).to be_an_instance_of(Parada)
@@ -73,6 +77,20 @@ describe StransClient do
       expect(veiculo.linha).to_not be_nil
       expect(veiculo.linha.codigoLinha).to_not be_nil
       expect(veiculo.linha.codigoLinha).to eql(codigoLinha)
+    end
+  end
+
+  context '.to_json deve retornar um json' do
+    it 'deve retornar instancias de Veiculo' do
+      linhas = @client.get(:linhas)
+      JSON.parse(linhas.to_json)
+      codigoLinha = '0403'
+      veiculos = @client.get(:veiculos_linha, codigoLinha)
+      JSON.parse(veiculos.to_json)
+      paradas = @client.get(:paradas)
+      JSON.parse(paradas.to_json)
+      paradas = @client.get(:paradas_linha, codigoLinha)
+      JSON.parse(paradas.to_json)
     end
   end
 

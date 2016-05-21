@@ -1,3 +1,4 @@
+require 'require_models'
 
 class Linha
 
@@ -5,13 +6,15 @@ class Linha
                 :retorno, :circular, :veiculos, :paradas
 
   def initialize(fields)
-    @codigoLinha  = fields['CodigoLinha'] || fields[:codigoLinha]
-    @denomicao    = fields['Denomicao'] || fields[:denomicao]
-    @origem       = fields['Origem']  || fields[:origem]
-    @retorno      = fields['Retorno'] || fields[:retorno]
-    @circular     = fields['Circular'] || fields[:circular]
-    @veiculos = load_objs(fields['Veiculos'], Veiculo)
-    @paradas  = load_objs(fields['Paradas'], Parada)
+    if(fields)
+      @codigoLinha  = fields['CodigoLinha'] || fields[:codigoLinha]
+      @denomicao    = fields['Denomicao'] || fields[:denomicao]
+      @origem       = fields['Origem']  || fields[:origem]
+      @retorno      = fields['Retorno'] || fields[:retorno]
+      @circular     = fields['Circular'] || fields[:circular]
+      @veiculos = load_objs(fields['Veiculos'], Veiculo)
+      @paradas  = load_objs(fields['Paradas'], Parada)
+    end
   end
 
   def load_objs(objs, k)
@@ -25,4 +28,15 @@ class Linha
     return map
   end
 
+  def to_json(*a)
+    serialized = Hash.new
+    serialized[:codigoLinha] = @codigoLinha if(@codigoLinha)
+    serialized[:denominacao] = @denominacao if(@denominacao)
+    serialized[:origem] = @origem if(@denominacao)
+    serialized[:retorno] = @retorno if(@retorno)
+    serialized[:Circular] = @circular if(@circular)
+    serialized[:veiculos] = @veiculos if(@veiculos)
+    serialized[:paradas] = @paradas if(@paradas)
+    serialized.to_json(*a)
+  end
 end
