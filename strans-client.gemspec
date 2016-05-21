@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'strans-client'
-  s.version     = '0.0.14'
+  s.version     = '1.0.0'
   s.date        = '2016-05-17'
   s.summary     = "strans-client"
   s.description = "A simple client for Api strans from Teresina."
