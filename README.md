@@ -66,14 +66,14 @@ Veja o modelo no código acima.
 
 #Erros
 
-Alguns erros pode ocorrer por conta de problemas na API ou na requisição
-Todos ele retorna uma instancia da classe Erro, com uma mensagem associada.
+Alguns erros podem ocorrer por conta de problemas na API ou na requisição.
+Todos eles retorna uma instância da classe Erro, com uma mensagem associada.
 
 ## Próximos passos
 
  - Transformar em uma gem - OK  
- - Criação de um modelo ruby - OK
+ - Criação de um modelo Ruby - OK
  - Gerenciar  erros retornados pela API. (+/-)
  - Gerenciar automaticamente o token de autenticação. - OK
- - Molhar o método to_json dos modelos, está funcional, mas feio.
+ - Molhar o método to_json dos modelos, tá funcional, mas feio.
  - Criar um cliente lazy que carrega informações em um cache.
