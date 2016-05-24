@@ -6,7 +6,7 @@ class Parada
     load_atts(fields)
   end
 
-  attr_accessor :codigoParada, :denomicao, :endereco, :lat, :long, :linha
+  attr_accessor :codigoParada, :denomicao, :endereco, :lat, :long, :linha, :dist
 
   def load_atts(fields)
     @codigoParada   = fields['CodigoParada'] || fields[:codigoParada]
@@ -23,6 +23,7 @@ class Parada
       serialized[:endereco] = @endereco if(@endereco)
       serialized[:lat] = @lat if(@lat)
       serialized[:long] = @long if(@long)
+      serialized[:dist] = @dist if(@dist)
       serialized.to_json(*a)
   end
 

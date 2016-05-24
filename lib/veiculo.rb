@@ -23,8 +23,4 @@ class Veiculo
     serialized.to_json(*a)
   end
 
-  def att()
-    puts "#{@codigoVeiculo},#{@hora}, #{@lat}, #{@long}"
-  end
-
 end
