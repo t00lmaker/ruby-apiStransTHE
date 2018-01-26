@@ -1,5 +1,4 @@
 require 'require_models'
-require 'strans-client.rb'
 
 
 class LazyStransClient < StransClient

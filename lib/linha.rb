@@ -2,13 +2,13 @@ require 'require_models'
 
 class Linha
 
-  attr_accessor :codigoLinha, :denomicao, :origem,
+  attr_accessor :codigoLinha, :denominacao, :origem,
                 :retorno, :circular, :veiculos, :paradas
 
   def initialize(fields)
     if(fields)
       @codigoLinha  = fields['CodigoLinha'] || fields[:codigoLinha]
-      @denomicao    = fields['Denomicao'] || fields[:denomicao]
+      @denominacao  = fields['Denomicao'] || fields[:denomicao]
       @origem       = fields['Origem']  || fields[:origem]
       @retorno      = fields['Retorno'] || fields[:retorno]
       @circular     = fields['Circular'] || fields[:circular]
