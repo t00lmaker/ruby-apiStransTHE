@@ -1,4 +1,4 @@
-require 'require_models'
+require 'json'
 
 class Parada
 
@@ -10,7 +10,7 @@ class Parada
 
   def load_atts(fields)
     @codigoParada   = fields['CodigoParada'] || fields[:codigoParada]
-    @denominacao    = fields['Denominacao'] || fields[:denominacao]
+    @denominacao    = fields['Denomicao'] || fields[:denomicao]
     @endereco       = fields['Endereco'] || fields[:endereco]
     @lat            = (fields['Lat']  || fields[:lat]).to_f
     @long           = (fields['Long'] || fields[:long]).to_f

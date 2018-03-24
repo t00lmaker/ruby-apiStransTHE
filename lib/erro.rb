@@ -1,17 +1,18 @@
 
-
+# Encapsula um erro de requisição
 class Erro
-
   def initialize(fields)
-    @code = fields['code']
-    @message = fields['message']
+    @code = fields[:code] || fields['code']
+    @message = fields[:message] || fields['message'] 
   end
 
-  def to_json(*a)
-    error = Hash.new
+  def to_json
+    map.to_json
+  end
+
+  def map
+    error = {}
     error[:code] = @error if @error
     error[:message] = @message if @message
-    error.to_json
   end
-
 end

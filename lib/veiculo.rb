@@ -1,5 +1,3 @@
-require 'require_models'
-
 class Veiculo
 
   attr_accessor :codigoVeiculo, :hora, :lat, :long, :linha

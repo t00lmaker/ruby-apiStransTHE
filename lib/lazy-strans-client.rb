@@ -1,6 +1,6 @@
-require 'require_models'
+require_relative 'strans-client'
 
-
+# cliente com alguns servicos facilitadores
 class LazyStransClient < StransClient
 
   RAIO_TERRA = 6378.137 #KM
@@ -9,18 +9,19 @@ class LazyStransClient < StransClient
   # Estaticas da api.
   def load
     @linhas = get(:linhas)
+    return @linhas if @linhas.is_a? Erro
     @paradas_linha = {} # paradas de uma linha
     @linhas_parada = {} # linhas de uma parada
     @linhas.each do |l|
       paradas = get(:paradas_linha, l.codigoLinha)
-      if(!paradas.kind_of?(Erro))
-        @paradas_linha[l.codigoLinha] = paradas
-        paradas.each do |p|
-          @linhas_parada[p.codigoParada] = [] if !@linhas_parada.key?(p.codigoParada)
-          @linhas_parada[p.codigoParada] << p.linha
-        end
+      next if paradas.is_a? Erro
+      @paradas_linha[l.codigoLinha] = paradas
+      paradas.each do |p|
+      @linhas_parada[p.codigoParada] = [] unless @linhas_parada.key?(p.codigoParada)
+      @linhas_parada[p.codigoParada] << p.linha
       end
     end
+    @linhas_parada
   end
 
   #pega as paradas com distancia máxima

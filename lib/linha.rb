@@ -1,4 +1,5 @@
-require 'require_models'
+require 'json'
+require_relative 'veiculo'
 
 class Linha
 

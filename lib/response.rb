@@ -1,4 +1,5 @@
-require 'require_models'
+require_relative 'Linha'
+require_relative 'Parada'
 
 class Response
 
@@ -8,35 +9,31 @@ class Response
 
   def model(path)
     @resp = JSON.parse(@resp.body)
-    if(@resp.kind_of?(Hash) && @resp['code'] )
-        return Erro.new(@resp)
-    end
-
     case path
     when :signin
-      token()
+      token
     when :linhas
-      linhas()
+      linhas
     when :veiculos
-      veiculos()
+      veiculos
     when :veiculos_linha
-      veiculos_linha()
+      veiculos_linha
     when :paradas
-      paradas()
+      paradas
     when :paradas_linha
-      paradas_linha()
+      paradas_linha
     end
   end
 
-  def token()
+  def token
     @resp
   end
 
-  def linhas()
-    @resp.map{|l| Linha.new(l) }
+  def linhas
+    @resp.map{ |l| Linha.new(l) }
   end
 
-  def veiculos()
+  def veiculos
     v = @resp.map do |node|
       linha = Linha.new(node['Linha'])
       linha.veiculos
@@ -44,18 +41,17 @@ class Response
     v.reduce(:concat)
   end
 
-  def veiculos_linha()
+  def veiculos_linha
     linha = Linha.new(@resp['Linha'])
     linha.veiculos
   end
 
-  def paradas ()
+  def paradas
     @resp.map{|p| Parada.new(p) }
   end
 
-  def paradas_linha()
-    @resp = @resp['Linha'].merge!('Paradas' => @resp['Paradas'])
-    Linha.new(@resp).paradas
+  def paradas_linha
+    @resp.map{|p| Parada.new(p) }
   end
 
 end
