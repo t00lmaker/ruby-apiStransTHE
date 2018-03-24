@@ -21,17 +21,23 @@ class Request
   end
 
   def send( method, path, params = nil )
-    uri = URI.parse(URL_API+path)
-    https = Net::HTTP.new(uri.host, uri.port)
-    https.use_ssl = true
+    uri = URI.parse(URL_API + path)
     if(method == :get)
       uri.query = URI.encode_www_form(params) if (params)
     end
-    req = VERB_MAP[method].new(uri, @token.header)
-    if (params && method != :get)
-      req.body = params.to_json
+    Net::HTTP.start(uri.host, uri.port,  :use_ssl => true) do |https|
+      req = VERB_MAP[method].new(uri, @token.header)
+      if params && method != :get
+        req.body = params.to_json
+
+      resp = https.request(req)
+      case resp
+      when Net::HTTPSuccess then
+        Response.new(resp)
+      else 
+        Erro.new(code: resp.code, message: resp.message)
+      end
     end
-    Response.new(https.request(req))
   end
 
 end
