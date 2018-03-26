@@ -1,9 +1,9 @@
 
-# Encapsula um erro de requisição
+# Encapsula um erro de requisicao
 class Erro
   def initialize(fields)
     @code = fields[:code] || fields['code']
-    @message = fields[:message] || fields['message'] 
+    @message = fields[:message] || fields['message']
   end
 
   def to_json
