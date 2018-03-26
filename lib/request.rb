@@ -2,7 +2,6 @@ require 'json'
 require 'net/http'
 require_relative 'response'
 require_relative 'erro'
-require 'byebug'
 
 # Representa uma requisicao
 class Request
