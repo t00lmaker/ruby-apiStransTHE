@@ -1,8 +1,8 @@
 require 'json'
-require_relative 'Request'
-require_relative 'Response'
-require_relative 'Token'
-require_relative 'Erro'
+require_relative 'request'
+require_relative 'response'
+require_relative 'token'
+require_relative 'erro'
 
 class StransClient
 
@@ -19,7 +19,7 @@ class StransClient
     @email = email
     @password = pass
     @key = key
-    @token = Token.new(@key)
+    @token = TokenStrans.new(@key)
   end
 
   def get(path, busca = nil)
@@ -40,7 +40,7 @@ class StransClient
   def autentic
     credencials = { email:@email, password:@password }
     @resp = @request.send(:post, PATHS[:signin], credencials)
-    @token = Token.new(@key, @resp.model(:signin)) unless @resp.is_a? Erro
+    @token = TokenStrans.new(@key, @resp.model(:signin)) unless @resp.is_a? Erro
     @resp
   end
 

@@ -40,7 +40,7 @@ class Request
     when Net::HTTPSuccess then
       Response.new(resp_http)
     else
-      Erro.new(code: resp_http.code, message: resp_http.message)
+      ErroStrans.new(code: resp_http.code, message: resp_http.message)
     end
   end
 end

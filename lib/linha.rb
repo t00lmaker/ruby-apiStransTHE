@@ -4,17 +4,17 @@ require 'byebug'
 
 class LinhaStrans
 
-  attr_accessor :codigo, :denominacao, :origem,
+  attr_accessor :codigoLinha, :denominacao, :origem,
                 :retorno, :circular, :veiculos, :paradas
 
   def initialize(fields)
-    @codigo = fields['CodigoLinha'] || fields[:codigoLinha] 
+    @codigoLinha = fields['CodigoLinha'] || fields[:codigoLinha] 
     @denominacao  = fields['Denomicao'] || fields[:denomicao]
     @origem       = fields['Origem']  || fields[:origem]
     @retorno      = fields['Retorno'] || fields[:retorno]
     @circular     = fields['Circular'] || fields[:circular]
-    @veiculos = load_objs(fields['Veiculos'], Veiculo)
-    @paradas  = load_objs(fields['Paradas'], Parada)
+    @veiculos = load_objs(fields['Veiculos'], VeiculoStrans)
+    @paradas  = load_objs(fields['Paradas'], ParadaStrans)
   end
 
   def load_objs(objs, k)

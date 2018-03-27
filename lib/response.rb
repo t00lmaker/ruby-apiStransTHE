@@ -30,28 +30,28 @@ class Response
   end
 
   def linhas
-    @resp.map{ |l| Linha.new(l) }
+    @resp.map{ |l| LinhaStrans.new(l) }
   end
 
   def veiculos
     v = @resp.map do |node|
-      linha = Linha.new(node['Linha'])
+      linha = LinhaStrans.new(node['Linha'])
       linha.veiculos
     end
     v.reduce(:concat)
   end
 
   def veiculos_linha
-    linha = Linha.new(@resp['Linha'])
+    linha = LinhaStrans.new(@resp['Linha'])
     linha.veiculos
   end
 
   def paradas
-    @resp.map{|p| Parada.new(p) }
+    @resp.map{|p| ParadaStrans.new(p) }
   end
 
   def paradas_linha
-    @resp.map{|p| Parada.new(p) }
+    @resp.map{|p| ParadaStrans.new(p) }
   end
 
 end

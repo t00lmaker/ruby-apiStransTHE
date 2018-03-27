@@ -14,7 +14,7 @@ class LazyStransClient < StransClient
     @linhas_parada = {} # linhas de uma parada
     @linhas.each do |l|
       paradas = get(:paradas_linha, l.codigoLinha)
-      next if paradas.is_a? Erro
+      next if paradas.is_a? ErroStrans
       @paradas_linha[l.codigoLinha] = paradas
       paradas.each do |p|
       @linhas_parada[p.codigoParada] = [] unless @linhas_parada.key?(p.codigoParada)

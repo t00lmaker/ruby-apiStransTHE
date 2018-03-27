@@ -12,13 +12,12 @@ class VeiculoStrans
   end
 
   def to_json(*a)
-    att()
-    serialized = Hash.new
-    serialized[:codigoVeiculo] = @codigoVeiculo if(@codigoVeiculo)
-    serialized[:hora] = @hora if(@hora)
-    serialized[:lat] = @lat if(@lat)
-    serialized[:long] = @long if(@long)
-    serialized.to_json(*a)
+    serialized = {}
+    serialized[:codigoVeiculo] = @codigoVeiculo if @codigoVeiculo
+    serialized[:hora] = @hora if @hora
+    serialized[:lat] = @lat if @lat
+    serialized[:long] = @long if @long
+    serialized.to_json *a
   end
 
 end

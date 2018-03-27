@@ -17,13 +17,13 @@ class ParadaStrans
   end
 
   def to_json(*a)
-      serialized = Hash.new
-      serialized[:codigoParada] = @codigoParada if(@codigoParada)
-      serialized[:denominacao] = @denominacao if(@denominacao)
-      serialized[:endereco] = @endereco if(@endereco)
-      serialized[:lat] = @lat if(@lat)
-      serialized[:long] = @long if(@long)
-      serialized[:dist] = @dist if(@dist)
+      serialized = {}
+      serialized[:codigoParada] = @codigoParada if @codigoParada
+      serialized[:denominacao] = @denominacao if @denominacao
+      serialized[:endereco] = @endereco if @endereco
+      serialized[:lat] = @lat if @lat
+      serialized[:long] = @long if @long
+      serialized[:dist] = @dist if @dist
       serialized.to_json(*a)
   end
 
