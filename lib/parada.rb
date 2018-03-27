@@ -1,6 +1,6 @@
 require 'json'
 
-class Parada
+class ParadaStrans
 
   def initialize(fields)
     load_atts(fields)

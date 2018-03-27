@@ -1,6 +1,6 @@
 
 
-class Token
+class TokenStrans
 
   def initialize (key, fields={})
       @key = key

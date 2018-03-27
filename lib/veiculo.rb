@@ -1,4 +1,4 @@
-class Veiculo
+class VeiculoStrans
 
   attr_accessor :codigoVeiculo, :hora, :lat, :long, :linha
 
