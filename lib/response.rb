@@ -1,5 +1,5 @@
-require_relative 'Linha'
-require_relative 'Parada'
+require_relative 'linha'
+require_relative 'parada'
 
 class Response
 

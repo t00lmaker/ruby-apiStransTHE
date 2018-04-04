@@ -1,6 +1,5 @@
 require 'json'
 require_relative 'veiculo'
-require 'byebug'
 
 class LinhaStrans
 

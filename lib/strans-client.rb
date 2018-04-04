@@ -40,7 +40,7 @@ class StransClient
   def autentic
     credencials = { email:@email, password:@password }
     @resp = @request.send(:post, PATHS[:signin], credencials)
-    @token = TokenStrans.new(@key, @resp.model(:signin)) unless @resp.is_a? Erro
+    @token = TokenStrans.new(@key, @resp.model(:signin)) unless @resp.is_a? ErroStrans
     @resp
   end
 

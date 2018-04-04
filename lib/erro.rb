@@ -1,6 +1,6 @@
 
 # Encapsula um erro de requisicao
-class Erro
+class ErroStrans
   def initialize(fields)
     @code = fields[:code] || fields['code']
     @message = fields[:message] || fields['message']
