@@ -12,7 +12,7 @@ class StransClient
     veiculos: '/veiculos',
     veiculos_linha: '/veiculosLinha',
     paradas: '/paradas',
-    paradas_linha: '/paradas'
+    paradas_linha: '/paradasLinha'
   }.freeze
 
   def initialize(email, pass, key)

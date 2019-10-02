@@ -51,7 +51,7 @@ class Response
   end
 
   def paradas_linha
-    @resp.map{|p| ParadaStrans.new(p) }
+    @resp['Paradas'].map{|p| ParadaStrans.new(p) }
   end
 
 end

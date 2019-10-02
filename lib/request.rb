@@ -18,7 +18,8 @@ class Request
     @token = token
   end
 
-  def send(method, path, params = nil)
+  def send(method, path, params = nil) 
+	  puts " method: #{method} path: #{path} param: #{params}"
     uri = URI.parse(URL_API + path)
     Net::HTTP.start(uri.host, uri.port, use_ssl: true) do |https|
       req = build_request(method, uri, params)
