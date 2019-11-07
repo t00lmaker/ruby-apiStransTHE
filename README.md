@@ -32,7 +32,7 @@ cliente = StransClient.new('oseu@email.com', 'suaSenha', 'suaChaveAqui')
 # do construtor acima.
 cliente.get(<path>, <SePrecisarDeParametro>)
 ```
-#Possíveis paths:
+# Possíveis paths:
 
 ```
 :linhas => '/linhas',
@@ -41,7 +41,7 @@ cliente.get(<path>, <SePrecisarDeParametro>)
 :paradas => '/paradas',
 :paradas_linha => '/paradasLinha',
 ```
-#Exemplos:
+# Exemplos:
 
 ```
   # Todas as linhas disponiveis.
@@ -57,14 +57,14 @@ cliente.get(<path>, <SePrecisarDeParametro>)
 
 ```
 
-#Modelo
+# Modelo
 
 Todas as chamadas retorna objetos populados, em que você pode usar o metodo
 to_json para transforma-los em JSON. Esse modelo possui os mesmo atributos
 do JSON retornado pela api, mas com os nomes dos atributos em minúsculos.
 Veja o modelo no código acima.
 
-#Erros
+# Erros
 
 Alguns erros podem ocorrer por conta de problemas na API ou na requisição.
 Todos eles retorna uma instância da classe Erro, com uma mensagem associada.
